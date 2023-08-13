@@ -5200,6 +5200,10 @@
                 el.closest(".close-menu");
                 document.documentElement.classList.remove("menu-open");
             }
+            if (el.closest(".card-featured__add")) {
+                const item = el.closest(".card-featured");
+                item.classList.toggle("_added");
+            }
         }
         window["FLS"] = true;
         isWebp();
