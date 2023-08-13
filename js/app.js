@@ -5155,10 +5155,14 @@
             }));
             return activeFlag;
         }
-        function addCartButton() {
+        function addCartButton(item) {
+            const radioInput = item.previousElementSibling;
             const button = document.querySelector(".product-card-info__button_add");
             const activeOptions = checkOptions();
-            if (activeOptions) {
+            if (activeOptions) if (radioInput.classList.contains("_disabled")) {
+                button.textContent = "Сообщить о поступлении";
+                button.disabled = true;
+            } else {
                 button.textContent = "в корзину";
                 button.disabled = false;
             } else {
@@ -5166,13 +5170,15 @@
                 button.disabled = true;
             }
         }
-        addCartButton();
         document.addEventListener("click", documentActionsClick);
         function documentActionsClick(e) {
             const el = e.target;
-            if (el.closest(".option-checkbox__label")) setTimeout((() => {
-                addCartButton();
-            }), 100);
+            if (el.closest(".option-checkbox__label")) {
+                const item = el.closest(".option-checkbox__label");
+                setTimeout((() => {
+                    addCartButton(item);
+                }), 100);
+            }
             if (el.closest("[data-popup-gallery]")) {
                 const button = el.closest("[data-popup-gallery]");
                 if (bodyLockStatus) {
