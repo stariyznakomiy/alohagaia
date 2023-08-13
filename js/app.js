@@ -5131,16 +5131,18 @@
         };
         const menuItems = document.querySelectorAll(".menu__item");
         menuItems.forEach((item => {
-            item.addEventListener("mouseover", (event => {
-                item.classList.add("_active");
-                item.closest(".menu__list").classList.add("_active");
-                if (item.querySelector(".submenu")) document.documentElement.classList.add("menu-hover");
-            }));
-            item.addEventListener("mouseout", (event => {
-                item.classList.remove("_active");
-                item.closest(".menu__list").classList.remove("_active");
-                if (item.querySelector(".submenu")) document.documentElement.classList.remove("menu-hover");
-            }));
+            if (!isMobile.any()) {
+                item.addEventListener("mouseover", (event => {
+                    item.classList.add("_active");
+                    item.closest(".menu__list").classList.add("_active");
+                    if (item.querySelector(".submenu")) document.documentElement.classList.add("menu-hover");
+                }));
+                item.addEventListener("mouseout", (event => {
+                    item.classList.remove("_active");
+                    item.closest(".menu__list").classList.remove("_active");
+                    if (item.querySelector(".submenu")) document.documentElement.classList.remove("menu-hover");
+                }));
+            }
         }));
         function checkOptions() {
             const optionsItems = document.querySelectorAll(".option-checkbox__input");
@@ -5203,6 +5205,29 @@
             if (el.closest(".card-featured__add")) {
                 const item = el.closest(".card-featured");
                 item.classList.toggle("_added");
+            }
+            if (el.closest(".menu__link") && isMobile.any()) {
+                const link = el.closest(".menu__link");
+                if (link.nextElementSibling) {
+                    e.preventDefault();
+                    const activeLink = document.querySelector(".menu__link.menu-hover");
+                    if (activeLink && activeLink !== link) {
+                        activeLink.classList.remove("menu-hover");
+                        activeLink.closest(".menu__item").classList.remove("_active");
+                        activeLink.closest(".menu__list").classList.remove("_active");
+                        document.documentElement.classList.remove("menu-hover");
+                    }
+                    link.classList.toggle("menu-hover");
+                    link.closest(".menu__item").classList.toggle("_active");
+                    link.closest(".menu__list").classList.toggle("_active");
+                    document.documentElement.classList.toggle("menu-hover");
+                }
+            }
+            if (!el.closest(".menu__link")) if (document.documentElement.classList.contains("menu-hover")) {
+                document.querySelector(".menu__link.menu-hover").classList.remove("menu-hover");
+                document.querySelector(".menu__item._active").classList.remove("_active");
+                document.querySelector(".menu__list._active").classList.remove("_active");
+                document.documentElement.classList.remove("menu-hover");
             }
         }
         window["FLS"] = true;
