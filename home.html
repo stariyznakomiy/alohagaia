@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230814005628">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230819214516">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1165,7 +1165,7 @@
 							<div class="product-card-info__installment product-card-installment">
 								<div class="product-card-installment__info">
 									<p>от <span>1 375 ₽</span> × 4 платежа</p>
-									<button type="button" class="product-card-installment__button">
+									<button data-popup="#popup-installment" type="button" class="product-card-installment__button">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#svg-info"></use>
 										</svg>
@@ -1179,7 +1179,7 @@
 								<div class="product-card-info__options product-card-options">
 									<div class="product-card-options__head">
 										<div class="product-card-options__caption">размер кольца</div>
-										<button data-da=".product-card-options, 479.99" type="button" class="product-card-options__action">
+										<button data-popup="#popup-size-ring" data-da=".product-card-options, 479.99" type="button" class="product-card-options__action">
 											как узнать свой размер
 											<svg>
 												<use xlink:href="img/icons/icons.svg#svg-info"></use>
@@ -1238,6 +1238,159 @@
 										<div class="product-card-options__list-item option-checkbox">
 											<input id="size_13" class="option-checkbox__input" type="radio" value="13" name="option-size" hidden>
 											<label for="size_13" class="option-checkbox__label"><span class="option-checkbox__text">21</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card-info__options-wrap">
+								<div class="product-card-info__options product-card-options">
+									<div class="product-card-options__head">
+										<div class="product-card-options__caption">количество товаров</div>
+									</div>
+									<div class="product-card-options__list">
+										<div class="product-card-options__list-item option-checkbox">
+											<input id="combo_1" class="option-checkbox__input" type="radio" value="1" name="option-combo" hidden>
+											<label for="combo_1" class="option-checkbox__label"><span class="option-checkbox__text">1 шт</span></label>
+										</div>
+										<div class="product-card-options__list-item option-checkbox">
+											<input id="combo_2" class="option-checkbox__input" type="radio" checked value="2" name="option-combo" hidden>
+											<label for="combo_2" class="option-checkbox__label"><span class="option-checkbox__text">пара</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card-info__options-wrap">
+								<div class="product-card-info__options product-card-options">
+									<div class="product-card-options__head">
+										<div class="product-card-options__caption">металл: <span>лимонное золото</span></div>
+									</div>
+									<div class="product-card-options__list">
+										<div class="product-card-options__list-item option-metal">
+											<input id="metal_1" class="option-image__input" checked type="radio" value="1" name="option-metal" hidden>
+											<label for="metal_1" class="option-image__label">
+												<span class="option-image__text">
+													<img data-src="img/metal/1.png" data-srcset="img/metal/1@2x.png 2x" alt="">
+												</span>
+											</label>
+										</div>
+										<div class="product-card-options__list-item option-metal">
+											<input id="metal_2" class="option-image__input" type="radio" value="2" name="option-metal" hidden>
+											<label for="metal_2" class="option-image__label">
+												<span class="option-image__text">
+													<img data-src="img/metal/2.png" data-srcset="img/metal/2@2x.png 2x" alt="">
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card-info__options-wrap">
+								<div class="product-card-info__options product-card-options product-card-options_slider">
+									<div class="product-card-options__head">
+										<div class="product-card-options__caption product-card-options__caption_clicker">
+											<span>собрать сет: </span>
+											<span>
+												кликер ARMAS
+												<button type="button">
+													<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+														<path d="M8 1.5C4.41797 1.5 1.5 4.41797 1.5 8C1.5 11.582 4.41797 14.5 8 14.5C11.582 14.5 14.5 11.582 14.5 8C14.5 4.41797 11.582 1.5 8 1.5ZM8 2.5C11.043 2.5 13.5 4.95703 13.5 8C13.5 11.043 11.043 13.5 8 13.5C4.95703 13.5 2.5 11.043 2.5 8C2.5 4.95703 4.95703 2.5 8 2.5ZM6 5.29297L5.29297 6L5.64844 6.35156L7.29297 8L5.64844 9.64844L5.29297 10L6 10.707L6.35156 10.3516L8 8.70703L9.64844 10.3516L10 10.707L10.707 10L10.3516 9.64844L8.70703 8L10.3516 6.35156L10.707 6L10 5.29297L9.64844 5.64844L8 7.29297L6.35156 5.64844L6 5.29297Z">
+														</path>
+													</svg>
+												</button>
+											</span>
+										</div>
+										<div class="product-card-options__arrows">
+											<button type="button" class="product-card-options__arrow product-card-options__arrow-prev swiper-button-prev">
+												<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z"></path>
+												</svg>
+											</button>
+											<button type="button" class="product-card-options__arrow product-card-options__arrow-next swiper-button-next">
+												<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+													<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z"></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="product-card-options__slider swiper">
+										<div class="product-card-options__slider-wrapper swiper-wrapper">
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_1" class="option-image__input" type="radio" value="1" name="option-clicker" hidden>
+												<label for="clicker_1" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_2" class="option-image__input" type="radio" value="2" name="option-clicker" hidden>
+												<label for="clicker_2" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_3" class="option-image__input" type="radio" value="3" name="option-clicker" hidden>
+												<label for="clicker_3" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_4" class="option-image__input" type="radio" value="4" name="option-clicker" hidden>
+												<label for="clicker_4" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_5" class="option-image__input" type="radio" value="5" name="option-clicker" hidden>
+												<label for="clicker_5" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_6" class="option-image__input" type="radio" value="6" name="option-clicker" hidden>
+												<label for="clicker_6" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
+											<div class="product-card-options__slide swiper-slide option-image">
+												<input id="clicker_7" class="option-image__input" type="radio" value="7" name="option-clicker" hidden>
+												<label for="clicker_7" class="option-image__label">
+													<span class="option-image__text">
+														<img data-src="img/metal/3.png" data-srcset="img/metal/3@2x.png 2x" alt="">
+													</span>
+													<span class="option-image__price">
+														3 500 ₽
+													</span>
+												</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1344,18 +1497,273 @@
 								</div>
 							</div>
 							<div class="product-card-info__extra product-card-extra">
-								<button type="button" class="product-card-extra__button">
+								<button data-popup="#popup-gift" type="button" class="product-card-extra__button">
 									намекнуть на подарок
 									<svg>
 										<use xlink:href="img/icons/icons.svg#svg-gift"></use>
 									</svg>
 								</button>
-								<button type="button" class="product-card-extra__button">
+								<button data-popup="#popup-jew-care" type="button" class="product-card-extra__button">
 									уход за украшением
 									<svg>
 										<use xlink:href="img/icons/icons.svg#svg-info"></use>
 									</svg>
 								</button>
+							</div>
+							<div class="product-card-info__featured product-card-featured">
+								<div class="product-card-featured__head">
+									<div class="product-card-featured__caption">идеально с кликером</div>
+									<div class="product-card-featured__arrows">
+										<button type="button" class="product-card-featured__arrow product-card-featured__arrow-prev swiper-button-prev">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow-left"></use>
+											</svg>
+										</button>
+										<button type="button" class="product-card-featured__arrow product-card-featured__arrow-next swiper-button-next">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow-right"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="product-card-featured__slider swiper">
+									<div class="product-card-featured__wrapper swiper-wrapper">
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide products-item-small swiper-slide">
+											<div class="products-item-small__img">
+												<img data-src="img/product-card/5.png" data-srcset="img/product-card/5@2x.png 2x" alt="">
+											</div>
+											<div class="products-item-small__actions">
+												<button type="button" class="products-item-small__action products-item-small__action-whishlist">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<button type="button" class="products-item-small__action products-item-small__action-addcart">
+													<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z" fill="#111111" />
+														<path d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15" stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+														<path d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="products-item-small__info">
+												<div class="products-item-small__title">шарм FLOVER</div>
+												<div class="products-item-small__descr">
+													<div class="products-item-small__prices">
+														<span class="products-item-small__price products-item-small__price-new">3&nbsp;300&nbsp;₽</span>
+														<span class="products-item-small__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+													</div>
+													<div class="products-item-small__metals">
+														<span class="products-item-small__metal products-item-small__metal-silver"></span>
+														<span class="products-item-small__metal products-item-small__metal-gold"></span>
+														<span class="products-item-small__metal products-item-small__metal-whitegold"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card-featured__slide product-card-featured__slide_last swiper-slide">
+											<a href="#">смотреть все</a>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="product-card-info__featured product-card-featured">
 								<div class="product-card-featured__head">
@@ -1845,6 +2253,280 @@
 			</div>
 		</footer>
 	</div>
+	<div id="popup-size-ring" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">как узнать свой размер кольца</div>
+					<div class="popup__text">
+						<p>Измерять палец лучше днем в помещении со средней температурой, потому что в течение дня ширина пальца может изменяться на пол размера.</p>
+					</div>
+					<div class="popup__slider popup__slider_2 swiper">
+						<div class="popup__slider-head">
+							<div class="popup__text">
+								<p>Вам понадобится: не растягивающаяся нитка или полоска бумаги шириной 3-4 мм, линейка, ручка.</p>
+							</div>
+							<div class="popup__arrows">
+								<button type="button" class="popup__arrow popup__arrow-prev swiper-button-prev">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z" />
+									</svg>
+								</button>
+								<button type="button" class="popup__arrow popup__arrow-next swiper-button-next">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="popup__slider-wrapper swiper-wrapper">
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/ring/1.svg" alt="">
+								</div>
+								<div class="popup__slide-text">не слишком плотно оберните нитку вокруг самой широкой части пальца</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/ring/2.svg" alt="">
+								</div>
+								<div class="popup__slide-text">отметьте точки, где происходит совпадение</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/ring/3.svg" alt="">
+								</div>
+								<div class="popup__slide-text">измерьте длину окружности до отметки в миллиметрах</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/ring/4.svg" alt="">
+								</div>
+								<div class="popup__slide-text">используйте таблицу ниже, чтобы узнать диаметр своего кольца</div>
+							</div>
+						</div>
+					</div>
+					<div data-spollers class="popup__spollers popup-spollers">
+						<div class="popup-spollers__item">
+							<button type="button" data-spoller class="popup-spollers__title">таблица размеров</button>
+							<div class="popup-spollers__body">
+								<table class="table-size">
+									<tr>
+										<th>длина нитки, мм</th>
+										<th>размер кольца</th>
+									</tr>
+									<tr>
+										<td>42</td>
+										<td>13.5</td>
+									</tr>
+									<tr>
+										<td>44</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td>46</td>
+										<td>14.5</td>
+									</tr>
+									<tr>
+										<td>47</td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<td>49</td>
+										<td>15.5</td>
+									</tr>
+									<tr>
+										<td>50</td>
+										<td>16</td>
+									</tr>
+									<tr>
+										<td>52</td>
+										<td>16.5</td>
+									</tr>
+									<tr>
+										<td>53</td>
+										<td>17</td>
+									</tr>
+									<tr>
+										<td>55</td>
+										<td>17.5</td>
+									</tr>
+									<tr>
+										<td>57</td>
+										<td>18</td>
+									</tr>
+									<tr>
+										<td>58</td>
+										<td>18.5</td>
+									</tr>
+									<tr>
+										<td>60</td>
+										<td>19</td>
+									</tr>
+									<tr>
+										<td>61</td>
+										<td>19.5</td>
+									</tr>
+									<tr>
+										<td>63</td>
+										<td>20</td>
+									</tr>
+									<tr>
+										<td>64</td>
+										<td>20.5</td>
+									</tr>
+									<tr>
+										<td>66</td>
+										<td>21</td>
+									</tr>
+									<tr>
+										<td>68</td>
+										<td>21.5</td>
+									</tr>
+									<tr>
+										<td>69</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>71</td>
+										<td>22.5</td>
+									</tr>
+								</table>
+								<p>Если Вы сомневаетесь в выборе размера, свяжитесь, пожалуйста, с нашими представителями в онлайн-чате. Специалисты alohagaia помогут подобрать оптимальный размер,
+									исходя из Ваших индивидуальных параметров.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-size-chain" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">как выбрать размер цепочки</div>
+					<div class="popup__slider popup__slider_1 swiper">
+						<div class="popup__slider-head">
+							<div class="popup__text">
+								<p>Размеры цепочек указываются в сантиметрах. Для подбора вы можете ориентироваться на схему ниже.</p>
+							</div>
+							<div class="popup__arrows">
+								<button type="button" class="popup__arrow popup__arrow-prev swiper-button-prev">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z" />
+									</svg>
+								</button>
+								<button type="button" class="popup__arrow popup__arrow-next swiper-button-next">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="popup__slider-wrapper swiper-wrapper">
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/chain/1.svg" alt="">
+								</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/size/chain/2.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-jew-care" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">уход за украшением</div>
+					<div class="popup__slider popup__slider_2 swiper">
+						<div class="popup__slider-head">
+							<div class="popup__text">
+								<p>Есть несколько простых рекомендаций, которые помогут сохранить красоту украшений и избежать необходимости тщательной чистки.</p>
+							</div>
+							<div class="popup__arrows">
+								<button type="button" class="popup__arrow popup__arrow-prev swiper-button-prev">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z" />
+									</svg>
+								</button>
+								<button type="button" class="popup__arrow popup__arrow-next swiper-button-next">
+									<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="popup__slider-wrapper swiper-wrapper">
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/1.svg" alt="">
+								</div>
+								<div class="popup__slide-text">храните изделия в мягких мешочках в сухих и темных местах</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/2.svg" alt="">
+								</div>
+								<div class="popup__slide-text">для серебра не используйте держатели, поскольку контакт с воздухом провоцирует потемнение металла</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/3.svg" alt="">
+								</div>
+								<div class="popup__slide-text">снимайте кольцо 925 пробы во время мытья рук на протяжении дня</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/4.svg" alt="">
+								</div>
+								<div class="popup__slide-text">снимайте украшения дома, во время занятий спортом и водных процедур</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/5.svg" alt="">
+								</div>
+								<div class="popup__slide-text">протирайте серебряные изделия мягкой тканью (микрофибра, фланель)</div>
+							</div>
+							<div class="popup__slide swiper-slide">
+								<div class="popup__slide-img">
+									<img src="img/care/6.svg" alt="">
+								</div>
+								<div class="popup__slide-text">промывайте их под теплой проточной водой раз в месяц</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
 	<div id="popup-pre-order" aria-hidden="true" class="popup popup-scale">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -1867,6 +2549,48 @@
 
 	<!-- -------------------- -->
 
+	<div id="popup-admission-success" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">спасибо за проявленный интерес!</div>
+					<div class="popup__text">
+						<p>Мы позвоним и пришлем уведомление, когда товар будет доступен для покупки.</p>
+					</div>
+					<button type="button" data-close class="popup__button btn btn-small btn-primary">продолжить покупки</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
+	<div id="popup-gift-success" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">готово!</div>
+					<div class="popup__text">
+						<p>Ваше послание отправлено.</p>
+					</div>
+					<button type="button" data-close class="popup__button btn btn-small btn-primary">продолжить покупки</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
 	<div id="popup-city" aria-hidden="true" class="popup popup-scale">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -1877,14 +2601,19 @@
 				</button>
 				<div class="popup__body">
 					<div class="popup__title">выберите город</div>
-					<form action="" class="popup__form form-popup">
+					<form action="" data-dev class="popup__form form-popup">
 						<div class="form-popup__group">
 							<div class="form-popup__input-wrap">
-								<select name="form[]" class="form">
+								<select data-scroll="200" name="form[]" class="form">
 									<option value="1" selected>Россия</option>
 									<option value="2">Россия</option>
 									<option value="3">Россия</option>
 									<option value="4">Россия</option>
+									<option value="5">Россия</option>
+									<option value="6">Россия</option>
+									<option value="7">Россия</option>
+									<option value="8">Россия</option>
+									<option value="9">Россия</option>
 								</select>
 							</div>
 							<div class="form-popup__input-wrap">
@@ -1898,7 +2627,137 @@
 		</div>
 	</div>
 
+	<!-- -------------------- -->
 
+	<div id="popup-installment" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">оплатите 25% от стоимости покупки</div>
+					<div class="popup__text">
+						<p>Оставшиеся 3 части спишутся автоматически с шагом в две недели</p>
+					</div>
+					<div class="popup__installment-info">
+						<div class="popup__installment-info-item">
+							<img src="img/icons/dolyame1.svg" alt="">
+							<div class="popup__installment-info-text">без процентов и комиссий</div>
+						</div>
+						<div class="popup__installment-info-item">
+							<img src="img/icons/dolyame2.svg" alt="">
+							<div class="popup__installment-info-text">как обычная оплата картой</div>
+						</div>
+					</div>
+					<div class="popup__installment-steps">
+						<div class="popup__installment-steps-item _active">
+							<span>сегодня<br> 1 375 ₽</span>
+						</div>
+						<div class="popup__installment-steps-item">
+							<span>15 июн<br> 1 375 ₽</span>
+						</div>
+						<div class="popup__installment-steps-item">
+							<span>29 июн<br> 1 375 ₽</span>
+						</div>
+						<div class="popup__installment-steps-item">
+							<span>13 июл<br> 1 375 ₽</span>
+						</div>
+					</div>
+					<div class="popup__notice">
+						Подробнее о сервисе можно узнать на <a href="#">dolyame.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
+	<div id="popup-admission" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">сообщить о поступлении</div>
+					<form action="" data-dev data-popup-message="#popup-admission-success" class="popup__form form-popup">
+						<div class="form-popup__group">
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">имя</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="как Вас зовут?" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">телефон</span>
+								<input autocomplete="off" type="tel" name="form[]" data-error="" placeholder="+7 (999) 999 99 99" class="form-popup__input input">
+								<span class="form-popup__input-capture-bot">сообщим, когда товар будет в наличии</span>
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">почта</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="введите ваш email" class="form-popup__input input">
+								<span class="form-popup__input-capture-bot">пришлем уведомление о поступлении товара</span>
+							</div>
+						</div>
+						<button type="submit" class="form-popup__button btn btn-big btn-primary">отправить</button>
+						<div class="form-popup__notice">
+							Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
+	<div id="popup-gift" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">намекнуть о подарке</div>
+					<div class="popup__text popup__text_sub">
+						<p>Вы можете отправить близкому человеку подсказку, чтобы получить тот самый подарок.</p>
+					</div>
+					<form action="" data-dev data-popup-message="#popup-gift-success" class="popup__form form-popup">
+						<div class="form-popup__group">
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">кому намекнуть</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">почта получателя</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">от кого</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">ваша почта</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="form-popup__input input">
+							</div>
+						</div>
+						<button type="submit" class="form-popup__button btn btn-big btn-primary">отправить</button>
+						<div class="form-popup__notice">
+							Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
 
 	<div id="popup-gallery-1" aria-hidden="true" class="popup popup-gallery">
 		<div class="popup__wrapper">
@@ -1975,7 +2834,7 @@
 								</div>
 								<button type="submit" class="form-popup__button btn btn-big btn-primary">получить код</button>
 								<div class="form-popup__timer">получить новый код можно через 00:52</div>
-								<div class="form-popup__privacy">Настоящим подтверждаю, что я ознакомлен и согласен с <a href="#">условиями оферты</a> и <a href="#">политики конфиденциальности</a>.
+								<div class="form-popup__notice">Настоящим подтверждаю, что я ознакомлен и согласен с <a href="#">условиями оферты</a> и <a href="#">политики конфиденциальности</a>.
 								</div>
 							</form>
 						</div>
@@ -2288,7 +3147,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230814005628"></script>
+	<script src="js/app.min.js?_v=20230819214516"></script>
 </body>
 
 </html>
