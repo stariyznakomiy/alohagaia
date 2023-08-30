@@ -5265,6 +5265,7 @@ textarea.input::placeholder {
 
 .products-item {
   position: relative;
+  z-index: 10;
   border-radius: 0.5rem;
 }
 
@@ -5292,6 +5293,7 @@ textarea.input::placeholder {
   padding-bottom: 125.6544502618%;
   background-color: #f4f4f4;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .products-item__img::before {
