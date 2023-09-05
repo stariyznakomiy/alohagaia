@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230904223516">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230906010504">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2806,6 +2806,29 @@
 
 	<!-- -------------------- -->
 
+	<!-- -------------------- -->
+
+	<div id="popup-vacancy-success" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">готово!</div>
+					<div class="popup__text">
+						<p>Ваш отклик успешно отправлен. Спасибо за проявленный интерес!</p>
+					</div>
+					<button type="button" data-close class="popup__button btn btn-small btn-secondary">закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
+
 	<div id="popup-gift-success" aria-hidden="true" class="popup popup-scale">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -2909,6 +2932,49 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- -------------------- -->
+
+	<div id="popup-vacancy" aria-hidden="true" class="popup popup-scale">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.75 2.04297L2.04297 2.75L2.39844 3.10156L7.29297 8L2.04297 13.25L2.75 13.957L8 8.70703L12.8945 13.6055L13.25 13.957L13.957 13.25L13.6055 12.8945L8.70703 8L13.957 2.75L13.25 2.04297L8 7.29297L3.10156 2.39844L2.75 2.04297Z" fill="#111111" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<div class="popup__title">отклик на вакансию</div>
+					<form action="" data-dev data-popup-message="#popup-vacancy-success" class="popup__form form-popup">
+						<div class="form-popup__group">
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">имя и фамилия</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="как Вас зовут?" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">телефон</span>
+								<input autocomplete="off" type="tel" name="form[]" data-error="" placeholder="+7 (999) 999 99 99" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">почта</span>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="введите ваш email" class="form-popup__input input">
+							</div>
+							<div class="form-popup__input-wrap">
+								<span class="form-popup__input-capture">коротко о себе</span>
+								<textarea autocomplete="off" data-error="" placeholder="можете написать в свободной форме" class="form-popup__input input"></textarea>
+							</div>
+						</div>
+						<button type="submit" class="form-popup__button btn btn-big btn-primary">отправить</button>
+						<div class="form-popup__notice">
+							Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -------------------- -->
 
 	<!-- -------------------- -->
 
@@ -3383,7 +3449,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230904223516"></script>
+	<script src="js/app.min.js?_v=20230906010504"></script>
 </body>
 
 </html>
