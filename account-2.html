@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230906010504">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230907010005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1110,13 +1110,15 @@
 			<section class="account">
 				<div class="account__container">
 					<div class="account__grid">
-						<nav class="account__navigation">
-							<a href="#" class="account__navigation-title _active">история заказов</a>
-							<a href="#" class="account__navigation-title">адрес доставки</a>
-							<a href="#" class="account__navigation-title">скидки и бонусы</a>
-							<a href="#" class="account__navigation-title">контактные данные</a>
-							<a href="#" class="account__navigation-title">выход</a>
-						</nav>
+						<div class="account__left">
+							<nav class="account__navigation">
+								<a href="#" class="account__navigation-title _active">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
 						<div class="account__body">
 							<a href="#" class="account__back">
 								<svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -1196,14 +1198,20 @@
 									<span>стоимость</span>
 								</div>
 								<div class="account__table-row">
-									<span>анклет SOLMI</span>
-									<span>1</span>
-									<span>3 200 ₽</span>
+									<span class="account__table-label">наименование</span>
+									<span class="account__table-value">анклет SOLMI</span>
+									<span class="account__table-label">количество</span>
+									<span class="account__table-value">1</span>
+									<span class="account__table-label">стоимость</span>
+									<span class="account__table-value">3 200 ₽</span>
 								</div>
 								<div class="account__table-row">
-									<span>подарочный бокс SPECIAL ONE</span>
-									<span>1</span>
-									<span>6 500 ₽</span>
+									<span class="account__table-label">наименование</span>
+									<span class="account__table-value">подарочный бокс SPECIAL ONE</span>
+									<span class="account__table-label">количество</span>
+									<span class="account__table-value">1</span>
+									<span class="account__table-label">стоимость</span>
+									<span class="account__table-value">6 500 ₽</span>
 								</div>
 								<div class="account__table-total">
 									<div>итого:</div>
@@ -2276,7 +2284,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230906010504"></script>
+	<script src="js/app.min.js?_v=20230907010005"></script>
 </body>
 
 </html>

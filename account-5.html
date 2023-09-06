@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230906010504">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230907010005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1110,13 +1110,15 @@
 			<section class="account">
 				<div class="account__container">
 					<div class="account__grid">
-						<nav class="account__navigation">
-							<a href="#" class="account__navigation-title">история заказов</a>
-							<a href="#" class="account__navigation-title">адрес доставки</a>
-							<a href="#" class="account__navigation-title _active">скидки и бонусы</a>
-							<a href="#" class="account__navigation-title">контактные данные</a>
-							<a href="#" class="account__navigation-title">выход</a>
-						</nav>
+						<div class="account__left">
+							<nav class="account__navigation">
+								<a href="#" class="account__navigation-title">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title _active">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
 						<div class="account__body">
 							<div class="account__title">скидки и бонусы</div>
 							<div class="account__bonus">
@@ -1133,14 +1135,20 @@
 									<span>основание</span>
 								</div>
 								<div class="account__table-row">
-									<span>22.02.2023 00:20</span>
-									<span>зачислено 1450 баллов</span>
-									<span>Тестовые бонусы 1</span>
+									<span class="account__table-label">дата</span>
+									<span class="account__table-value">22.02.2023 00:20</span>
+									<span class="account__table-label">описание</span>
+									<span class="account__table-value">зачислено 1450 баллов</span>
+									<span class="account__table-label">основание</span>
+									<span class="account__table-value">Тестовые бонусы 1</span>
 								</div>
 								<div class="account__table-row">
-									<span>13.03.2023 17:20</span>
-									<span>зачислено 200 баллов</span>
-									<span>Приветственные</span>
+									<span class="account__table-label">дата</span>
+									<span class="account__table-value">13.03.2023 17:20</span>
+									<span class="account__table-label">описание</span>
+									<span class="account__table-value">зачислено 200 баллов</span>
+									<span class="account__table-label">основание</span>
+									<span class="account__table-value">Приветственные</span>
 								</div>
 								<div class="account__table-total">
 									<div>итого:</div>
@@ -2225,7 +2233,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230906010504"></script>
+	<script src="js/app.min.js?_v=20230907010005"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230906010504">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230907010005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1110,15 +1110,27 @@
 			<section class="account">
 				<div class="account__container">
 					<div class="account__grid">
-						<nav class="account__navigation">
-							<a href="#" class="account__navigation-title">история заказов</a>
-							<a href="#" class="account__navigation-title">адрес доставки</a>
-							<a href="#" class="account__navigation-title">скидки и бонусы</a>
-							<a href="#" class="account__navigation-title _active">контактные данные</a>
-							<a href="#" class="account__navigation-title">выход</a>
-						</nav>
+						<div class="account__left">
+							<nav data-da=".account__nav-body, 1023.98" class="account__navigation">
+								<a href="#" class="account__navigation-title">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title _active">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
 						<div class="account__body">
-							<div class="account__title">контактные данные</div>
+							<div data-spollers="1023.98,max" class="account__nav-spollers">
+								<div class="account__nav-item">
+									<button type="button" data-spoller class="account__nav-title">
+										<span>контактные данные</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.22851 4.47266L1.52539 5.19141L8.00195 11.5312L14.4746 5.19141L13.7793 4.47266L8.00196 10.1328L2.22851 4.47266Z" />
+										</svg>
+									</button>
+									<div class="account__nav-body"></div>
+								</div>
+							</div>
 							<div class="account__step account__step_recipient">
 								<div class="account__group">
 									<div class="account__capture account__capture_label">личная информация</div>
@@ -1175,7 +1187,7 @@
 											</span>
 										</label>
 									</div>
-									<div class="account__inputs">
+									<div class="account__inputs account__inputs_change">
 										<div class="account__input-wrap">
 											<div class="account__input-label">текущий пароль</div>
 											<input autocomplete="off" type="password" name="form[]" data-error="" placeholder="" class="account__input input">
@@ -2263,7 +2275,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230906010504"></script>
+	<script src="js/app.min.js?_v=20230907010005"></script>
 </body>
 
 </html>

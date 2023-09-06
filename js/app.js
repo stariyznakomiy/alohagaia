@@ -9915,6 +9915,29 @@
                     }
                 }
             });
+            if (document.querySelector(".shops__slider")) new swiper_core_Swiper(`.shops__slider`, {
+                modules: [ Navigation, Pagination ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 3,
+                spaceBetween: 8,
+                speed: 800,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 8
+                    },
+                    479.98: {
+                        slidesPerView: 2,
+                        spaceBetween: 8
+                    },
+                    1023.98: {
+                        slidesPerView: 3,
+                        spaceBetween: 8
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
