@@ -9837,13 +9837,15 @@
             const productsSliders = document.querySelectorAll(".products-slider");
             if (productsSliders) for (let index = 0; index < productsSliders.length; index++) {
                 const slide = productsSliders[index];
+                let slidesPerView = 4;
+                if (slide.classList.contains("products-slider_3")) slidesPerView = 3;
                 slide.classList.add(`slider-id-${index}`);
                 slide.querySelector(".swiper-wrapper").classList.add(`slider-wrapper-id-${index}`);
                 if (document.querySelector(".products-slider__list")) new swiper_core_Swiper(`.products-slider.slider-id-${index} .products-slider__list`, {
                     modules: [ Navigation ],
                     observer: true,
                     observeParents: true,
-                    slidesPerView: 4,
+                    slidesPerView,
                     spaceBetween: 8,
                     speed: 800,
                     navigation: {
@@ -9852,11 +9854,11 @@
                     },
                     breakpoints: {
                         320: {
-                            slidesPerView: 2,
+                            slidesPerView,
                             spaceBetween: 8
                         },
                         1023.98: {
-                            slidesPerView: 4,
+                            slidesPerView,
                             spaceBetween: 8
                         }
                     },
