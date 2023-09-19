@@ -3820,10 +3820,10 @@
                         spollerTitles.forEach((spollerTitle => {
                             if (hideSpollerBody) {
                                 spollerTitle.removeAttribute("tabindex");
-                                if (!spollerTitle.classList.contains("_spoller-active")) spollerTitle.nextElementSibling.hidden = true;
+                                if (!spollerTitle.classList.contains("_spoller-active")) if (!spollerTitle.hasAttribute("data-spoller-fade")) spollerTitle.nextElementSibling.hidden = true;
                             } else {
                                 spollerTitle.setAttribute("tabindex", "-1");
-                                spollerTitle.nextElementSibling.hidden = false;
+                                if (!spollerTitle.hasAttribute("data-spoller-fade")) spollerTitle.nextElementSibling.hidden = false;
                             }
                         }));
                     }
@@ -3838,7 +3838,7 @@
                         if (!spollersBlock.querySelectorAll("._slide").length) {
                             if (oneSpoller && !spollerTitle.classList.contains("_spoller-active")) hideSpollersBody(spollersBlock);
                             spollerTitle.classList.toggle("_spoller-active");
-                            _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
+                            if (!spollerTitle.hasAttribute("data-spoller-fade")) _slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
                         }
                         e.preventDefault();
                     }
@@ -3848,7 +3848,7 @@
                     const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
                     if (spollerActiveTitle && !spollersBlock.querySelectorAll("._slide").length) {
                         spollerActiveTitle.classList.remove("_spoller-active");
-                        _slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
+                        if (!spollerActiveTitle.hasAttribute("data-spoller-fade")) _slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
                     }
                 }
                 const spollersClose = document.querySelectorAll("[data-spoller-close]");
@@ -3859,7 +3859,7 @@
                         if (spollersBlock.classList.contains("_spoller-init")) {
                             const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
                             spollerClose.classList.remove("_spoller-active");
-                            _slideUp(spollerClose.nextElementSibling, spollerSpeed);
+                            if (!spollerClose.hasAttribute("data-spoller-fade")) _slideUp(spollerClose.nextElementSibling, spollerSpeed);
                         }
                     }));
                 }));
@@ -4553,6 +4553,7 @@
                     classSelectLink: "select__link",
                     classSelectOptions: "select__options",
                     classSelectOptionsScroll: "select__scroll",
+                    classSelectOptionsFade: "select__fade",
                     classSelectOption: "select__option",
                     classSelectContent: "select__content",
                     classSelectRow: "select__row",
@@ -4617,7 +4618,7 @@
                         selectItemTitle.insertAdjacentHTML("afterbegin", `<span class="${this.selectClasses.classSelectLabel}">${this.getSelectPlaceholder(originalSelect).label.text ? this.getSelectPlaceholder(originalSelect).label.text : this.getSelectPlaceholder(originalSelect).value}</span>`);
                     }
                 }
-                selectItem.insertAdjacentHTML("beforeend", `<div class="${this.selectClasses.classSelectBody}"><div hidden class="${this.selectClasses.classSelectOptions}"></div></div>`);
+                if (!originalSelect.hasAttribute("data-fade-select")) selectItem.insertAdjacentHTML("beforeend", `<div class="${this.selectClasses.classSelectBody}"><div hidden class="${this.selectClasses.classSelectOptions}"></div></div>`); else selectItem.insertAdjacentHTML("beforeend", `<div class="${this.selectClasses.classSelectBody}"><div class="${this.selectClasses.classSelectOptions} ${this.selectClasses.classSelectOptionsFade}"></div></div>`);
                 this.selectBuild(originalSelect);
                 originalSelect.dataset.speed = originalSelect.dataset.speed ? originalSelect.dataset.speed : "150";
                 originalSelect.addEventListener("change", (function(e) {
@@ -4668,7 +4669,7 @@
                 const selectOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
                 if (!selectOptions.classList.contains("_slide")) {
                     selectItem.classList.remove(this.selectClasses.classSelectOpen);
-                    _slideUp(selectOptions, originalSelect.dataset.speed);
+                    if (!selectOptions.classList.contains("select__fade")) _slideUp(selectOptions, originalSelect.dataset.speed);
                 }
             }
             selectAction(selectItem) {
@@ -4680,7 +4681,7 @@
                 }
                 if (!selectOptions.classList.contains("_slide")) {
                     selectItem.classList.toggle(this.selectClasses.classSelectOpen);
-                    _slideToggle(selectOptions, originalSelect.dataset.speed);
+                    if (!selectOptions.classList.contains("select__fade")) _slideToggle(selectOptions, originalSelect.dataset.speed);
                 }
             }
             setSelectTitleValue(selectItem, originalSelect) {

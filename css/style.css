@@ -693,11 +693,33 @@ textarea.input::placeholder {
 }
 
 .select._select-open {
-  z-index: 5;
+  z-index: 20;
 }
 
 .select._select-open .select__title {
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.select__fade {
+  opacity: 0;
+  top: 2.5625rem;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+  -webkit-transition-property: opacity, top;
+  transition-property: opacity, top;
+}
+
+._select-open .select__fade {
+  top: 1.9375rem;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.select_catalog-sort._select-open .select__fade {
+  top: 1.9375rem;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .select_catalog-sort .select__title {
@@ -744,6 +766,16 @@ textarea.input::placeholder {
 .select_catalog-sort .select__option._active {
   background-color: #111111;
   color: #ffffff;
+}
+
+.select_catalog-sort .select__fade {
+  opacity: 0;
+  top: 2.5625rem;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
+  -webkit-transition-property: opacity, top;
+  transition-property: opacity, top;
 }
 
 ._select-tag {
@@ -913,6 +945,14 @@ textarea.input::placeholder {
   height: 1.25rem;
   right: -0.625rem;
   top: -0.5rem;
+}
+
+.noUi-horizontal .noUi-handle-lower {
+  right: -1.25rem;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
 }
 
 .noUi-vertical {
@@ -9599,7 +9639,7 @@ textarea.input::placeholder {
 
   .filters__body {
     position: absolute;
-    z-index: 10;
+    z-index: 20;
     top: 1.9375rem;
     left: 0;
     width: 21.25rem;
@@ -9611,6 +9651,22 @@ textarea.input::placeholder {
 
   .filters__buttons {
     display: none;
+  }
+
+  [data-spoller-fade] + .filters__body {
+    opacity: 0;
+    top: 2.5625rem;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease 0s;
+    transition: 0.3s ease 0s;
+    -webkit-transition-property: opacity, top;
+    transition-property: opacity, top;
+  }
+
+  [data-spoller-fade]._spoller-active + .filters__body {
+    top: 1.9375rem;
+    opacity: 1;
+    pointer-events: all;
   }
 
   .product-card__body {
