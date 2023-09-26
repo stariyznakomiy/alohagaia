@@ -11571,6 +11571,17 @@
                 const item = el.closest(".product-card-info__wishlist");
                 item.classList.toggle("_active");
             }
+            if (el.closest(".cart-popup-product__more")) {
+                const button = el.closest(".cart-popup-product__more");
+                const parent = button.closest(".popup");
+                if (parent) parent.classList.add("option-open");
+            }
+            if (!el.closest(".product-mob-options__body") && !el.closest(".cart-popup-product__more") && document.querySelector(".popup.option-open")) document.querySelector(".popup.option-open").classList.remove("option-open");
+            if (el.closest(".product-mob-options__delete")) {
+                const button = el.closest(".product-mob-options__delete");
+                const parent = button.closest(".popup.option-open");
+                if (parent) parent.classList.remove("option-open");
+            }
         }
         window["FLS"] = true;
         isWebp();

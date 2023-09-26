@@ -2877,6 +2877,113 @@ textarea.input::placeholder {
   right: 0;
 }
 
+.product-mob-options {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.product-mob-options::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.option-open .product-mob-options::before {
+  opacity: 1;
+}
+
+.product-mob-options__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  pointer-events: all;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.option-open .product-mob-options__body {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.product-mob-options__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.product-mob-options__capture {
+  font-weight: 500;
+  line-height: 1.2666666667;
+}
+
+.product-mob-options__quantity {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5.5rem;
+          flex: 0 0 5.5rem;
+  min-height: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.product-mob-options__quantity .quantity__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+}
+
+.product-mob-options__footer {
+  padding: 0.6875rem 0 0.75rem;
+  border-top: 0.0625rem solid #dbdbdb;
+}
+
+.product-mob-options__delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-mob-options__delete svg:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.product-mob-options__delete span {
+  color: #585858;
+}
+
 .header {
   position: relative;
   z-index: 100;
@@ -10063,6 +10170,10 @@ textarea.input::placeholder {
   }
 
   .cart-popup-product__more {
+    display: none;
+  }
+
+  .product-mob-options {
     display: none;
   }
 
