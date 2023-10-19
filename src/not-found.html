@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<section class="not-found">
+				<div class="not-found__container">
+					<div class="not-found__body">
+						<div class="not-found__title">код ошибки 404/500/501</div>
+						<div class="not-found__text">Крутое описание ошибки и что делать дальше нашему чудесному пользователю</div>
+						<div class="not-found__action">
+							<a href="#" class="not-found__link btn btn-small btn-secondary">какое-то действие</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

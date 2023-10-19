@@ -1,0 +1,121 @@
+.shops {
+  padding: rem(24) 0 rem(80);
+  @media (max-width: $tablet2) {
+    padding: rem(24) 0 rem(64);
+  }
+  // .shops__container
+  &__container {
+  }
+  // .shops__body
+  &__body {
+  }
+  // .shops__title
+  &__title {
+    font-size: rem(32);
+    line-height: math.div(32, 32);
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(28);
+      line-height: math.div(28, 28);
+    }
+  }
+  // .shops__list
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+    }
+  }
+  // .shops__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+  // .shops__item-title
+  &__item-title {
+    font-weight: 500;
+    line-height: math.div(19, 15);
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+  // .shops__item-info
+  &__item-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: rem(8);
+    grid-row-gap: rem(16);
+    padding: rem(15) 0;
+    border-top: rem(1) solid $border;
+    border-bottom: rem(1) solid $border;
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+  // .shops__item-address
+  &__item-address {
+    & > * {
+      display: block;
+      line-height: math.div(19, 15);
+      &:not(:last-child) {
+        margin-bottom: rem(4);
+      }
+    }
+    a {
+      text-decoration: underline;
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  // .shops__item-hours
+  &__item-hours {
+    & > * {
+      display: block;
+      line-height: math.div(19, 15);
+      &:not(:last-child) {
+        margin-bottom: rem(4);
+      }
+    }
+  }
+  // .shops__gallery
+  // &__gallery {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   grid-column-gap: rem(8);
+  // }
+  // .shops__slider
+  &__slider {
+    @media (max-width: $tablet2) {
+      overflow: visible !important;
+    }
+  }
+  // .shops__slider-wrapper
+  &__slider-wrapper {
+  }
+  // .shops__slide
+  &__slide {
+    position: relative;
+    padding-bottom: 24.609375%;
+    border-radius: rem(8);
+    overflow: hidden;
+    @media (max-width: $tablet2) {
+      padding-bottom: 37%;
+    }
+    @media (max-width: $mobileSmall) {
+      padding-bottom: 75%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-position: cover;
+    }
+  }
+}

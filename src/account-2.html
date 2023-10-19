@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_gray" data-lp>
+			<section class="account">
+				<div class="account__container">
+					<div class="account__grid">
+						<div class="account__left">
+							<nav class="account__navigation">
+								<a href="#" class="account__navigation-title _active">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
+						<div class="account__body">
+							<a href="#" class="account__back">
+								<svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M10.8027 2.50391L4.68164 8.12891C4.57617 8.22266 4.51758 8.35547 4.51758 8.4961C4.51758 8.63673 4.57617 8.76954 4.68164 8.86329L10.8027 14.4922L11.4824 13.75L5.75976 8.4961L11.4824 3.23829L10.8027 2.50391Z" />
+								</svg>
+								<span>все заказы</span>
+							</a>
+							<div class="account__title">заказ #16600</div>
+							<div class="account__list">
+								<div class="account__item">
+									<div class="account__label">дата оформления</div>
+									<div class="account__value">22.02.2023 00:20</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">сумма и статус</div>
+									<div class="account__value">
+										<div class="account__price">22 500 ₽</div>
+										<div class="account__elements">
+											<div class="account__element">в обработке</div>
+											<div class="account__element">оплачен</div>
+										</div>
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">уведомления в мессенджерах</div>
+									<div class="account__value">
+										<div class="account__elements">
+											<div class="account__element">telegram</div>
+											<div class="account__element">whatsap</div>
+										</div>
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">способ оплаты</div>
+									<div class="account__value">
+										<span>CloudPayments</span>
+										<span>Оплата картой</span>
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">способ доставки</div>
+									<div class="account__value">
+										Самовывоз в Москве (Малый Сухаревский пер., 9 с1, м. Цветной бульвар) (Наш менеджер оповестит вас о готовности заказа в течение 1-2 рабочих дней. Заказы
+										комплектуются на складе, после чего передаются в пункт выдачи. Самовывоз из нашего магазина БЕСПЛАТНО (с 11:00 до 21:00))
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">адрес доставки</div>
+									<div class="account__value">
+										г Москва, Россия
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">дата оформления</div>
+									<div class="account__value">
+										Василий Естафьев +7(987)111-22-33
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">email</div>
+									<div class="account__value">
+										email@example.ru
+									</div>
+								</div>
+								<div class="account__item">
+									<div class="account__label">комментарий к заказу</div>
+									<div class="account__value">
+										Это тестовый заказ
+									</div>
+								</div>
+							</div>
+							<div class="account__subtitle">состав заказа</div>
+							<div class="account__table account__table_compound">
+								<div class="account__table-head">
+									<span>наименование</span>
+									<span>количество</span>
+									<span>стоимость</span>
+								</div>
+								<div class="account__table-row">
+									<span class="account__table-label">наименование</span>
+									<span class="account__table-value">анклет SOLMI</span>
+									<span class="account__table-label">количество</span>
+									<span class="account__table-value">1</span>
+									<span class="account__table-label">стоимость</span>
+									<span class="account__table-value">3 200 ₽</span>
+								</div>
+								<div class="account__table-row">
+									<span class="account__table-label">наименование</span>
+									<span class="account__table-value">подарочный бокс SPECIAL ONE</span>
+									<span class="account__table-label">количество</span>
+									<span class="account__table-value">1</span>
+									<span class="account__table-label">стоимость</span>
+									<span class="account__table-value">6 500 ₽</span>
+								</div>
+								<div class="account__table-total">
+									<div>итого:</div>
+									<div>30 100 ₽</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.page-whishlist {
+  padding: rem(24) 0 rem(80);
+  @media (max-width: $tablet2) {
+    padding: rem(16) 0 rem(64);
+  }
+  // .page-whishlist__body
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  // .page-whishlist__result
+  &__result {
+    position: relative;
+    width: 100%;
+    max-width: rem($maxWidthContainer);
+    margin: 0 auto;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  // .page-whishlist__result-top
+  &__result-top {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .page-whishlist__result-value
+  &__result-value {
+    font-weight: 500;
+    font-size: rem(22);
+    line-height: math.div(26, 22);
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(20);
+      line-height: math.div(24, 20);
+    }
+    sup {
+      font-size: rem(13);
+      line-height: math.div(15, 13);
+      @media (max-width: $mobileSmall) {
+        font-size: rem(12);
+        line-height: math.div(14, 12);
+      }
+    }
+  }
+  // .page-whishlist__share
+  &__share {
+    color: $blue;
+    line-height: math.div(19, 15);
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $blue-hover;
+      }
+    }
+  }
+  // .page-whishlist__result-list
+  &__result-list {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+      @media (max-width: $mobileSmall) {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+  // .page-whishlist__products-more
+  &__products-more {
+    text-align: center;
+  }
+  // .page-whishlist__products-more-button
+  &__products-more-button {
+    color: $blue;
+    font-size: rem(18);
+    line-height: math.div(18, 18);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $blue-hover;
+      }
+    }
+    @media (max-width: $mobileSmall) {
+      padding: rem(4) 0;
+      font-size: rem(16);
+    }
+  }
+  // .page-whishlist__result-empty
+  &__result-empty {
+    line-height: math.div(19, 15);
+  }
+  // .page-whishlist__link
+  &__link {
+    align-self: flex-start;
+    &:not(:last-child) {
+      margin-bottom: rem(64);
+    }
+  }
+}

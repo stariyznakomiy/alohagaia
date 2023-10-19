@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_gray" data-lp>
+			<section class="account">
+				<div class="account__container">
+					<div class="account__grid">
+						<div class="account__left">
+							<nav data-da=".account__nav-body, 1023.98" class="account__navigation">
+								<a href="#" class="account__navigation-title">история заказов</a>
+								<a href="#" class="account__navigation-title _active">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
+						<div class="account__body">
+							<div data-spollers="1023.98,max" class="account__nav-spollers">
+								<div class="account__nav-item">
+									<button type="button" data-spoller class="account__nav-title">
+										<span>адрес доставки</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.22851 4.47266L1.52539 5.19141L8.00195 11.5312L14.4746 5.19141L13.7793 4.47266L8.00196 10.1328L2.22851 4.47266Z" />
+										</svg>
+									</button>
+									<div class="account__nav-body"></div>
+								</div>
+							</div>
+							<div class="account__step account__step_delivery">
+								<div data-one-select class="account__group">
+									<div class="account__capture">страна</div>
+									<select data-scroll name="form[]" class="form">
+										<option value="1" selected>Россия</option>
+										<option value="2">Россия</option>
+										<option value="3">Россия</option>
+										<option value="4">Россия</option>
+										<option value="5">Россия</option>
+										<option value="6">Россия</option>
+										<option value="7">Россия</option>
+										<option value="8">Россия</option>
+										<option value="9">Россия</option>
+										<option value="10">Россия</option>
+									</select>
+									<div class="account__capture">населенный пункт</div>
+									<select data-scroll name="form[]" class="form">
+										<option value="1" selected>Москва</option>
+										<option value="2">Москва</option>
+										<option value="3">Москва</option>
+										<option value="4">Москва</option>
+										<option value="5">Москва</option>
+										<option value="6">Москва</option>
+										<option value="7">Москва</option>
+										<option value="8">Москва</option>
+										<option value="9">Москва</option>
+										<option value="10">Москва</option>
+									</select>
+								</div>
+								<div class="account__group">
+									<div class="account__capture account__capture_label">адрес</div>
+									<div class="account__inputs">
+										<div class="account__input-wrap">
+											<div class="account__input-label">улица, дом/корпус</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="например, Манежный переулок, д. 6" class="account__input input">
+										</div>
+										<div class="account__input-wrap account__input-wrap_small">
+											<div class="account__input-label">квартира</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="например, 67" class="account__input input">
+										</div>
+										<div class="account__input-wrap account__input-wrap_small">
+											<div class="account__input-label">подъезд</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="например, 1" class="account__input input">
+										</div>
+									</div>
+									<div class="account__action">
+										<button type="button" class="account__button btn btn-primary btn-big">Сохранить изменения</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

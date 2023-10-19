@@ -1,0 +1,220 @@
+// <SELECT>
+// Снипет (HTML): sel
+.select {
+	position: relative;
+	// .select__body
+	&__body {
+		position: relative;
+	}
+	// .select__title
+	&__title {
+		position: relative;
+		color: inherit;
+		text-align: left;
+		border: rem(1) solid $border;
+		background-color: $white;
+		cursor: pointer;
+		min-height: rem(42);
+		width: 100%;
+		border-radius: rem(8);
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		align-items: center;
+		// height: rem(30);
+		padding: 0 rem(11);
+		> * {
+			flex: 1 1 auto;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: rem(12);
+			width: rem(12);
+			height: rem(12);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url(../img/icons/arrow-expand.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+			transform: translateY(-50%);
+			transition: all 0.3s ease 0s;
+			._select-open & {
+				transform: translateY(-50%) rotateX(-180deg);
+			}
+		}
+		&._select-pseudo-label {
+			&::before {
+				content: attr(data-pseudo-label);
+				opacity: 0.5;
+			}
+		}
+	}
+	// .select__text
+	&__text {
+		flex: 1 1 auto;
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		color: #000;
+		position: absolute;
+		top: 100%;
+		border-radius: 0 0 4px 4px;
+		min-width: 100%;
+		left: 0;
+		background-color: #fff;
+		border-top: 0;
+		border: 1px solid #d9d9d9;
+		border-top: 0;
+		padding: 10px 0px 5px 0px;
+	}
+	// .select__scroll
+	&__scroll {
+		overflow-y: auto;
+		overflow-x: hidden;
+		// Максимальная высота
+		max-height: 200px;
+		// Стили скроллбара
+		.simplebar-scrollbar {
+			&::before {
+				//opacity: 1;
+			}
+		}
+	}
+	// .select__option
+	&__option {
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		padding: 5px 15px;
+		color: inherit;
+		&._select-selected {
+			background-color: #eee;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: #d9d9d9;
+			}
+		}
+	}
+
+	// Конструкция дополнительных данных
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+	&__asset {
+	}
+	&__text {
+	}
+
+	// Состояния селекта
+	&._select-open {
+		z-index: 20;
+		.select__title {
+			border-radius: rem(8) rem(8) 0 0;
+		}
+	}
+	&._select-disabled {
+	}
+	&._select-active {
+	}
+	&._select-focus {
+	}
+	&._select-multiple {
+	}
+	&._select-checkbox {
+	}
+	// .select__fade
+	&__fade{
+		opacity: 0;
+		top: rem(41);
+		pointer-events: none;
+		transition: 0.3s ease 0s;
+		transition-property: opacity, top;
+		._select-open & {
+			top: rem(31);
+      opacity: 1;
+      pointer-events: all;
+		}
+	}
+
+}
+
+.select_catalog-sort {
+	&._select-open{
+		.select__fade{
+			top: rem(31);
+      opacity: 1;
+      pointer-events: all;
+		}
+	}
+	.select__title {
+		min-height: auto;
+		padding-right: rem(20);
+		border: none;
+		background-color: transparent;
+	}
+	.select__value {
+		padding: 0;
+		&::after {
+			right: 0;
+			width: rem(16);
+			height: rem(16);
+			background-image: url(../img/icons/sort-down.svg);
+		}
+	}
+	.select__options {
+		top: rem(31);
+		left: auto;
+		right: rem(-8);
+		width: rem(200);
+		padding: rem(16);
+		border: rem(1) solid $border;
+		border-radius: rem(8);
+		@media (max-width: $tablet2) {
+			right: auto;
+			left: rem(-8);
+		}
+	}
+	.select__option {
+		padding: rem(7) rem(8);
+		border-radius: rem(8);
+		background-color: $light-gray;
+		line-height: math.div(18, 15);
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $light-hover;
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(4);
+		}
+		&._active {
+			background-color: $dark;
+			color: $white;
+		}
+	}
+	.select__fade{
+		opacity: 0;
+		top: rem(41);
+		pointer-events: none;
+		transition: 0.3s ease 0s;
+		transition-property: opacity, top;
+	}
+}
+
+// Тег
+._select-tag {
+	cursor: pointer;
+}

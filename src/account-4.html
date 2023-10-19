@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_gray" data-lp>
+			<section class="account">
+				<div class="account__container">
+					<div class="account__grid">
+						<div class="account__left">
+							<nav data-da=".account__nav-body, 1023.98" class="account__navigation">
+								<a href="#" class="account__navigation-title">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title _active">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
+						<div class="account__body">
+							<div data-spollers="1023.98,max" class="account__nav-spollers">
+								<div class="account__nav-item">
+									<button type="button" data-spoller class="account__nav-title">
+										<span>контактные данные</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.22851 4.47266L1.52539 5.19141L8.00195 11.5312L14.4746 5.19141L13.7793 4.47266L8.00196 10.1328L2.22851 4.47266Z" />
+										</svg>
+									</button>
+									<div class="account__nav-body"></div>
+								</div>
+							</div>
+							<div class="account__step account__step_recipient">
+								<div class="account__group">
+									<div class="account__capture account__capture_label">личная информация</div>
+									<div class="account__inputs">
+										<div class="account__input-wrap">
+											<div class="account__input-label">имя</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="account__input input">
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">фамилия</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="account__input input">
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">отчество</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="account__input input">
+											<div class="account__input-sub">обязательно для отправки почтой</div>
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">день рождения</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="account__input input">
+											<div class="account__input-sub">пришлем персональное предложение ко дню рождения</div>
+										</div>
+									</div>
+									<div class="account__checkbox checkbox">
+										<input id="subscribe_1" data-error="" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="subscribe_1" class="checkbox__label">
+											<span class="checkbox__text">
+												подписаться на нашу рассылку
+											</span>
+										</label>
+										<span class="checkbox__subtext">присылаем вам ненавязчивые добрые письма о новинках, важных событиях и акциях</span>
+									</div>
+								</div>
+								<div class="account__group">
+									<div class="account__capture">контактные данные</div>
+									<div class="account__inputs">
+										<div class="account__input-wrap">
+											<div class="account__input-label">телефон</div>
+											<input autocomplete="off" type="tel" name="form[]" data-error="" placeholder="+7 (___) ___-__-__" class="account__input input">
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">электронная почта</div>
+											<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="account__input input">
+											<div class="account__input-sub">отправим чек</div>
+										</div>
+									</div>
+								</div>
+								<div class="account__group">
+									<div class="account__checkbox account__checkbox_pass checkbox">
+										<input id="subscribe_1" data-error="" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="subscribe_1" class="checkbox__label">
+											<span class="checkbox__text">
+												сменить пароль
+											</span>
+										</label>
+									</div>
+									<div class="account__inputs account__inputs_change">
+										<div class="account__input-wrap">
+											<div class="account__input-label">текущий пароль</div>
+											<input autocomplete="off" type="password" name="form[]" data-error="" placeholder="" class="account__input input">
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">новый пароль</div>
+											<input autocomplete="off" type="password" name="form[]" data-error="" placeholder="" class="account__input input">
+										</div>
+										<div class="account__input-wrap">
+											<div class="account__input-label">повторите новый пароль</div>
+											<input autocomplete="off" type="password" name="form[]" data-error="" placeholder="" class="account__input input">
+										</div>
+									</div>
+									<div class="account__action">
+										<button type="button" class="account__button btn btn-primary btn-big">Сохранить изменения</button>
+										<div class="account__notice">
+											Нажимая на кнопку «Сохранить изменения», я принимаю условия <a href="#">публичной оферты</a> и <a href="#">политики конфиденциальности</a>.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

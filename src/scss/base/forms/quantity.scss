@@ -1,0 +1,54 @@
+//<QUANTITY>
+// Снипет (HTML): qa
+.quantity {
+	width: rem(56);
+	height: rem(16);
+	display: flex;
+	// .quantity__button
+	&__button {
+		flex: 0 0 rem(16);
+		position: relative;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 0px -4.5px;
+			background-color: $dark-50;
+			width: rem(8);
+			height: rem(1);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before,
+				&::after {
+					background-color: $dark;
+				}
+			}
+		}
+		// .quantity__button_plus
+		&_plus {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		// .quantity__button_minus
+		&_minus {
+		}
+	}
+	// .quantity__input
+	&__input {
+		flex: 1 1 auto;
+		input {
+			height: 100%;
+			background-color: transparent;
+			color: $dark;
+			font-size: rem(13);
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

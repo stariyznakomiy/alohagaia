@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<div class="page-search">
+				<div class="page-search__container">
+					<div class="page-search__body">
+						<div class="page-search__result">
+							<div class="page-search__result-top">
+								<div class="page-search__result-value">
+									поиск по запросу «sdfdsfsdfs»
+								</div>
+							</div>
+							<div class="page-search__result-empty">
+								По вашему запросу ничего не найдено
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

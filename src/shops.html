@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<section class="shops">
+				<div class="shops__container">
+					<div class="shops__body">
+						<h1 class="shops__title">магазины</h1>
+						<div class="shops__list">
+							<div class="shops__item">
+								<div class="shops__item-title">Москва</div>
+								<div class="shops__item-info">
+									<div class="shops__item-address">
+										<span>Малый Сухаревский переулок, 9 с1 (м. Цветной бульвар)</span>
+										<a href="#">на карте</a>
+									</div>
+									<div class="shops__item-hours">
+										<span>ПН-ВС: 11:00 - 21:00</span>
+										<span>8 (905) 568-77-90</span>
+									</div>
+								</div>
+							</div>
+							<div class="shops__item">
+								<div class="shops__item-title">Санкт-Петербург</div>
+								<div class="shops__item-info">
+									<div class="shops__item-address">
+										<span>Манежный переулок, 6 (м. Чернышевская)</span>
+										<a href="#">на карте</a>
+									</div>
+									<div class="shops__item-hours">
+										<span>ПН-ВС: 11:00 - 21:00</span>
+										<span>8 (903) 092-35-78</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shops__slider swiper">
+							<div class="shops__slider-wrapper swiper-wrapper">
+								<div class="shops__slide swiper-slide">
+									<img data-src="img/shops/1.jpg" data-srcset="img/shops/1@2x.jpg 2x" alt="">
+								</div>
+								<div class="shops__slide swiper-slide">
+									<img data-src="img/shops/2.jpg" data-srcset="img/shops/2@2x.jpg 2x" alt="">
+								</div>
+								<div class="shops__slide swiper-slide">
+									<img data-src="img/shops/3.jpg" data-srcset="img/shops/3@2x.jpg 2x" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_gray" data-lp>
+			<section class="account">
+				<div class="account__container">
+					<div class="account__grid">
+						<div class="account__left">
+							<nav data-da=".account__nav-body, 1023.98" class="account__navigation">
+								<a href="#" class="account__navigation-title _active">история заказов</a>
+								<a href="#" class="account__navigation-title">адрес доставки</a>
+								<a href="#" class="account__navigation-title">скидки и бонусы</a>
+								<a href="#" class="account__navigation-title">контактные данные</a>
+								<a href="#" class="account__navigation-title">выход</a>
+							</nav>
+						</div>
+						<div class="account__body">
+							<div data-spollers="1023.98,max" class="account__nav-spollers">
+								<div class="account__nav-item">
+									<button type="button" data-spoller class="account__nav-title">
+										<span>история заказов</span>
+										<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.22851 4.47266L1.52539 5.19141L8.00195 11.5312L14.4746 5.19141L13.7793 4.47266L8.00196 10.1328L2.22851 4.47266Z" />
+										</svg>
+									</button>
+									<div class="account__nav-body"></div>
+								</div>
+							</div>
+							<div class="account__table account__table_history">
+								<div class="account__table-head">
+									<span>дата оформления</span>
+									<span>номер заказа</span>
+									<span>статус</span>
+									<span>оплата</span>
+									<span>сумма заказа</span>
+								</div>
+								<div class="account__table-row">
+									<span class="account__table-label">дата оформления</span>
+									<span class="account__table-value">22.02.2023 00:20</span>
+									<span class="account__table-label">номер заказа</span>
+									<a href="#" class="account__table-value">16600</a>
+									<span class="account__table-label">статус</span>
+									<span class="account__table-value">доставлен</span>
+									<span class="account__table-label">оплата</span>
+									<span class="account__table-value">оплачен</span>
+									<span class="account__table-label">сумма заказа</span>
+									<span class="account__table-value">22 500 ₽</span>
+								</div>
+								<div class="account__table-row">
+									<span class="account__table-label">дата оформления</span>
+									<span class="account__table-value">22.02.2023 00:20</span>
+									<span class="account__table-label">номер заказа</span>
+									<a href="#" class="account__table-value">16599</a>
+									<span class="account__table-label">статус</span>
+									<span class="account__table-value">в обработке</span>
+									<span class="account__table-label">оплата</span>
+									<span class="account__table-value">оплачен</span>
+									<span class="account__table-label">сумма заказа</span>
+									<span class="account__table-value">12 300 ₽</span>
+								</div>
+								<div class="account__table-total">
+									<div>сумма выполненных заказов:</div>
+									<div>30 100 ₽</div>
+								</div>
+							</div>
+							<div class="account__empty">Заказов пока нет. Информация про купленные изделия будет видна в этом разделе.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

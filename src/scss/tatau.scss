@@ -1,0 +1,293 @@
+.tatau {
+  // .tatau__container
+  &__container {
+  }
+  // .tatau__block
+  &__block {
+    padding: rem(80) 0;
+    @media (max-width: $tablet2) {
+      padding: rem(64) 0;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: rem(32) 0 rem(64);
+    }
+    &:first-child {
+      .tatau__group {
+        &:first-child {
+          .tatau__row {
+            &:first-child {
+              grid-column: 4 / -4;
+              @media (max-width: $tablet2) {
+                grid-column: 2 / -2;
+              }
+              @media (max-width: $mobileSmall) {
+                grid-column: 1 / -1;
+              }
+              .tatau__img {
+                padding-bottom: percent(545, 773);
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          grid-row-gap: rem(24);
+          @media (max-width: $mobileSmall) {
+            grid-row-gap: rem(16);
+          }
+          .tatau__row {
+            &:first-child {
+              align-self: start;
+              grid-column: 1 / span 4;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / -1;
+              }
+              .tatau__images {
+                .tatau__img {
+                  @media (min-width: $tablet2) {
+                    padding-bottom: calc(50% - 8px);
+                  }
+                  @media (max-width: $tablet2) {
+                    padding-bottom: percent(224, 224);
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              grid-column: 7 / -1;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / -1;
+              }
+              .tatau__text {
+                &:not(:last-child) {
+                  margin-bottom: rem(32);
+                }
+                &:first-child {
+                  margin-bottom: rem(16);
+                }
+                &:nth-child(2) {
+                  max-width: 66.6667%;
+                }
+              }
+              .tatau__img {
+                padding-bottom: percent(965, 772);
+              }
+            }
+            &:nth-child(3) {
+              grid-column: 4 / span 3;
+              @media (max-width: $tablet2) {
+                grid-column: -1 / -3;
+              }
+              @media (max-width: $mobileSmall) {
+                grid-column: -1 / -2;
+              }
+              .tatau__decor-img {
+                @media (max-width: $tablet2) {
+                  max-width: rem(160);
+                  margin-left: auto;
+                }
+                @media (max-width: $mobileSmall) {
+                  max-width: rem(80);
+                }
+              }
+            }
+            &:nth-child(4) {
+              grid-column: 7 / span 4;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / span 4;
+                grid-row: 3;
+              }
+              @media (max-width: $mobileSmall) {
+                grid-column: 1 / span 2;
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          .tatau__row {
+            &:first-child {
+              grid-column: 1 / -1;
+              .tatau__img {
+                padding-bottom: percent(776, 1552);
+              }
+            }
+            &:nth-child(2) {
+              grid-column: 7 / -1;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / -1;
+                margin-bottom: rem(8);
+              }
+              @media (max-width: $mobileSmall) {
+                margin-bottom: rem(0);
+              }
+            }
+            &:nth-child(3) {
+              grid-column: 7 / span 3;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / span 2;
+              }
+              @media (max-width: $mobileSmall) {
+                grid-column: 1 / 2;
+              }
+              .tatau__decor-img {
+                @media (max-width: $tablet2) {
+                  max-width: rem(120);
+                }
+                @media (max-width: $mobileSmall) {
+                  max-width: rem(80);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          .tatau__row {
+            &:first-child {
+              grid-column: 1 / span 4;
+              .tatau__img {
+                padding-bottom: percent(640, 512);
+              }
+            }
+            &:nth-child(2) {
+              grid-column: 7 / span 4;
+              @media (max-width: $tablet2) {
+                grid-column: 1 / span 4;
+              }
+              & > * {
+                &:not(:last-child) {
+                  margin-bottom: rem(24);
+                  @media (max-width: $mobileSmall) {
+                    margin-bottom: rem(16);
+                  }
+                }
+              }
+              .tatau__text {
+                @media (max-width: $mobileSmall) {
+                  font-size: rem(20);
+                  line-height: math.div(24, 20);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // .tatau__group
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: rem(8);
+    grid-row-gap: rem(32);
+    &:not(:last-child) {
+      margin-bottom: rem(80);
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(64);
+      }
+    }
+    @media (max-width: $tablet2) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-row-gap: rem(24);
+    }
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: rem(16);
+    }
+  }
+  // .tatau__row
+  &__row {
+  }
+  // .tatau__img
+  &__img {
+    position: relative;
+    border-radius: rem(8);
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .tatau__images
+  &__images {
+    @media (min-width: $tablet2) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: rem(-8);
+      margin-top: rem(-8);
+    }
+    @media (max-width: $tablet2) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: rem(8);
+      grid-row-gap: rem(8);
+    }
+    & > * {
+      @media (min-width: $tablet2) {
+        flex: 0 0 calc(50% - 8px);
+        margin-left: rem(8);
+        margin-top: rem(8);
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+  // .tatau__text
+  &__text {
+    font-size: rem(22);
+    line-height: math.div(26, 22);
+    @media (max-width: $mobileSmall) {
+      font-size: rem(15);
+      line-height: math.div(19, 15);
+    }
+    // .tatau__text_big
+    &_big {
+      font-size: rem(48);
+      line-height: math.div(43, 48);
+      letter-spacing: rem(-1.44);
+      @media (max-width: $mobileSmall) {
+        font-size: rem(28);
+        line-height: math.div(28, 28);
+        letter-spacing: normal;
+      }
+    }
+    // .tatau__text_middle
+    &_middle {
+      font-size: rem(32);
+      line-height: math.div(32, 32);
+      @media (max-width: $tablet2) {
+        font-size: rem(22);
+        line-height: math.div(26, 22);
+      }
+      @media (max-width: $mobileSmall) {
+        font-size: rem(20);
+        line-height: math.div(24, 20);
+      }
+    }
+  }
+  // .tatau__decor-img
+  &__decor-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  // .tatau__link-more
+  &__link-more {
+    display: inline-block;
+    color: $blue;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: math.div(18, 18);
+    text-transform: uppercase;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $blue-hover;
+      }
+    }
+  }
+}

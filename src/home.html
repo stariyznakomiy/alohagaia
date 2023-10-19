@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<section class="hero">
+				<div class="hero__slider swiper">
+					<div class="hero__slider-wrapper swiper-wrapper">
+						<div class="hero__slide hero-collection-1 swiper-slide">
+							<div class="hero-collection-1__container">
+								<div class="hero-collection-1__body">
+									<div class="hero-collection-1__content">
+										<h1 class="hero-collection-1__title"><a href="#">новая коллекция CLASSIC</a></h1>
+										<div class="hero-collection-1__text">
+											Мы рады познакомить вас с коллекцией CLASSIC — это наше переосмысление и новое прочтение украшений, ставших для нас полноценной базой.
+										</div>
+									</div>
+									<div class="hero-collection-1__img">
+										<img data-src="img/hero/slider/1.jpg" data-srcset="img/hero/slider/1@2x.jpg 2x" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero__slide hero-collection-2 swiper-slide">
+							<div class="hero-collection-2__img">
+								<img data-src="img/hero/slider/2.jpg" data-srcset="img/hero/slider/2@2x.jpg 2x" alt="">
+							</div>
+							<div class="hero-collection-2__body">
+								<div class="hero-collection-2__container">
+									<div class="hero-collection-2__title">
+										новая коллекция<br> ON THE WAY TO WOODSTOCK
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero__slide hero-collection-3 swiper-slide">
+							<div class="hero-collection-3__container">
+								<div class="hero-collection-3__body">
+									<div class="hero-collection-3__content">
+										<h1 class="hero-collection-3__title"><a href="#">новая коллекция CLASSIC</a></h1>
+										<div class="hero-collection-3__text">
+											Мы рады познакомить вас с коллекцией CLASSIC — это наше переосмысление и новое прочтение украшений, ставших для нас полноценной базой.
+										</div>
+									</div>
+									<div class="hero-collection-3__img">
+										<img data-src="img/hero/slider/3.jpg" data-srcset="img/hero/slider/3@2x.jpg 2x" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products-slider products-slider_bestseller">
+				<div class="products-slider__container">
+					<div class="products-slider__head products-slider__head_main">
+						<div class="products-slider__title products-slider__title_big">бестселлеры</div>
+						<div class="products-slider__arrows">
+							<button type="button" class="products-slider__arrow products-slider__arrow-prev swiper-button-prev">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z" />
+								</svg>
+							</button>
+							<button type="button" class="products-slider__arrow products-slider__arrow-next swiper-button-next">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="products-slider__list swiper">
+						<div class="products-slider__list-wrapper swiper-wrapper">
+							<div class="products-slider__slide products-item swiper-slide">
+								<a href="#" class="products-item__img">
+									<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+									<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+								</a>
+								<div class="products-item__badges">
+									<span class="products-item__badge products-item__badge-new">(new)</span>
+									<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+									<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+								</div>
+								<div class="products-item__actions">
+									<button type="button" class="products-item__action products-item__action-whishlist">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="products-item__action products-item__action-addcart">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+												fill="#111111" />
+											<path
+												d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+												stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="products-item__info">
+									<div class="products-item__title">кольцо ALPHA с перидотом</div>
+									<div class="products-item__descr">
+										<div class="products-item__prices">
+											<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+											<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+										</div>
+										<div class="products-item__metals">
+											<span class="products-item__metal products-item__metal-silver"></span>
+											<span class="products-item__metal products-item__metal-gold"></span>
+											<span class="products-item__metal products-item__metal-whitegold"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide products-item swiper-slide">
+								<a href="#" class="products-item__img">
+									<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+									<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+								</a>
+								<div class="products-item__badges">
+									<span class="products-item__badge products-item__badge-new">(new)</span>
+									<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+									<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+								</div>
+								<div class="products-item__actions">
+									<button type="button" class="products-item__action products-item__action-whishlist">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="products-item__action products-item__action-addcart">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+												fill="#111111" />
+											<path
+												d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+												stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="products-item__info">
+									<div class="products-item__title">кольцо ALPHA с перидотом</div>
+									<div class="products-item__descr">
+										<div class="products-item__prices">
+											<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+											<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+										</div>
+										<div class="products-item__metals">
+											<span class="products-item__metal products-item__metal-silver"></span>
+											<span class="products-item__metal products-item__metal-gold"></span>
+											<span class="products-item__metal products-item__metal-whitegold"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide products-item swiper-slide">
+								<a href="#" class="products-item__img">
+									<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+									<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+								</a>
+								<div class="products-item__badges">
+									<span class="products-item__badge products-item__badge-new">(new)</span>
+									<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+									<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+								</div>
+								<div class="products-item__actions">
+									<button type="button" class="products-item__action products-item__action-whishlist">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="products-item__action products-item__action-addcart">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+												fill="#111111" />
+											<path
+												d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+												stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="products-item__info">
+									<div class="products-item__title">кольцо ALPHA с перидотом</div>
+									<div class="products-item__descr">
+										<div class="products-item__prices">
+											<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+											<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+										</div>
+										<div class="products-item__metals">
+											<span class="products-item__metal products-item__metal-silver"></span>
+											<span class="products-item__metal products-item__metal-gold"></span>
+											<span class="products-item__metal products-item__metal-whitegold"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide products-item swiper-slide">
+								<a href="#" class="products-item__img">
+									<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+									<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+								</a>
+								<div class="products-item__badges">
+									<span class="products-item__badge products-item__badge-new">(new)</span>
+									<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+									<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+								</div>
+								<div class="products-item__actions">
+									<button type="button" class="products-item__action products-item__action-whishlist">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="products-item__action products-item__action-addcart">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+												fill="#111111" />
+											<path
+												d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+												stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="products-item__info">
+									<div class="products-item__title">кольцо ALPHA с перидотом</div>
+									<div class="products-item__descr">
+										<div class="products-item__prices">
+											<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+											<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+										</div>
+										<div class="products-item__metals">
+											<span class="products-item__metal products-item__metal-silver"></span>
+											<span class="products-item__metal products-item__metal-gold"></span>
+											<span class="products-item__metal products-item__metal-whitegold"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-slider__slide products-item swiper-slide">
+								<a href="#" class="products-item__img">
+									<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+									<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+								</a>
+								<div class="products-item__badges">
+									<span class="products-item__badge products-item__badge-new">(new)</span>
+									<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+									<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+								</div>
+								<div class="products-item__actions">
+									<button type="button" class="products-item__action products-item__action-whishlist">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<button type="button" class="products-item__action products-item__action-addcart">
+										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+												fill="#111111" />
+											<path
+												d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+												stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+												stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+								<div class="products-item__info">
+									<div class="products-item__title">кольцо ALPHA с перидотом</div>
+									<div class="products-item__descr">
+										<div class="products-item__prices">
+											<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+											<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+										</div>
+										<div class="products-item__metals">
+											<span class="products-item__metal products-item__metal-silver"></span>
+											<span class="products-item__metal products-item__metal-gold"></span>
+											<span class="products-item__metal products-item__metal-whitegold"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-categories">
+				<div class="main-categories__container">
+					<div class="main-categories__body">
+						<div class="main-categories__img">
+							<img data-src="img/hero/2.png" data-srcset="img/hero/2@2x.png 2x" alt="">
+						</div>
+						<div class="main-categories__content">
+							<div class="main-categories__capture">категории</div>
+							<div class="main-categories__list">
+								<div class="main-categories__item">
+									<div class="main-categories__item-link">
+										<a href="#">кольца</a>
+										<div class="main-categories__item-quantity">193</div>
+									</div>
+									<div class="main-categories__item-img-wrapper">
+										<div class="main-categories__item-img">
+											<img data-src="img/hero/categories/1.jpg" data-srcset="img/hero/categories/1@2x.jpg 2x" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="main-categories__item">
+									<div class="main-categories__item-link">
+										<a href="#">серьги</a>
+										<div class="main-categories__item-quantity">67</div>
+									</div>
+									<div class="main-categories__item-img-wrapper">
+										<div class="main-categories__item-img">
+											<img data-src="img/hero/categories/2.jpg" data-srcset="img/hero/categories/2@2x.jpg 2x" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="main-categories__item">
+									<div class="main-categories__item-link">
+										<a href="#">подвески</a>
+										<div class="main-categories__item-quantity">24</div>
+									</div>
+									<div class="main-categories__item-img-wrapper">
+										<div class="main-categories__item-img">
+											<img data-src="img/hero/categories/1.jpg" data-srcset="img/hero/categories/1@2x.jpg 2x" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="main-categories__item">
+									<div class="main-categories__item-link">
+										<a href="#">пирсинг</a>
+										<div class="main-categories__item-quantity">41</div>
+									</div>
+									<div class="main-categories__item-img-wrapper">
+										<div class="main-categories__item-img">
+											<img data-src="img/hero/categories/2.jpg" data-srcset="img/hero/categories/2@2x.jpg 2x" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="main-categories__item">
+									<div class="main-categories__item-link">
+										<a href="#">браслеты</a>
+										<div class="main-categories__item-quantity">52</div>
+									</div>
+									<div class="main-categories__item-img-wrapper">
+										<div class="main-categories__item-img">
+											<img data-src="img/hero/categories/1.jpg" data-srcset="img/hero/categories/1@2x.jpg 2x" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-collection">
+				<div class="main-collection__container">
+					<div class="main-collection__body">
+						<div class="main-collection__title">коллекции</div>
+						<div class="main-collection__grid">
+							<div class="main-collection__left">
+								<div class="main-collection__figure">
+									<div class="main-collection__figure-img">
+										<img data-src="img/hero/3.jpg" data-srcset="img/hero/3@2x.jpg 2x" alt="">
+									</div>
+									<div class="main-collection__figure-capture">СЕВЕР</div>
+								</div>
+							</div>
+							<div class="main-collection__right">
+								<div class="main-collection__text">
+									Наши коллекции — это отдельные исследования и путешествия, которые обретают свою материальную форму в украшениях.
+								</div>
+								<div class="main-collection__list">
+									<div class="main-collection__item">
+										<div class="main-collection__item-img">
+											<img data-src="img/hero/4.jpg" data-srcset="img/hero/4@2x.jpg 2x" alt="">
+										</div>
+										<div class="main-collection__item-capture">ON THE WAY TO WOODSTOCK</div>
+									</div>
+									<div class="main-collection__item">
+										<div class="main-collection__item-img">
+											<img data-src="img/hero/5.jpg" data-srcset="img/hero/5@2x.jpg 2x" alt="">
+										</div>
+										<div class="main-collection__item-capture">TATAU</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-resale">
+				<div class="main-resale__container">
+					<div class="main-resale__body">
+						<div class="main-resale__top">
+							<div class="main-resale__title">RESALE</div>
+							<div class="main-resale__text">
+								Если у вас есть серебряные украшения Alohagaia из прошлых коллекции, которые лежат в шкатулке без дела, вы можете принести их нам — мы
+								подарим вам скидку на новое.
+							</div>
+							<div class="main-resale__action">
+								<button type="button" class="main-resale__button btn btn-big btn-secondary">Подробнее</button>
+							</div>
+						</div>
+						<div class="main-resale__img">
+							<img data-src="img/hero/6.png" data-srcset="img/hero/6@2x.png 2x" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products-slider products-slider_lab products-slider_3">
+				<div class="products-slider__container">
+					<div class="products-slider__head ">
+						<div class="products-slider__title products-slider__title_big">LAB (Limited Edition)</div>
+						<div class="products-slider__arrows">
+							<button type="button" class="products-slider__arrow products-slider__arrow-prev swiper-button-prev">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.80078 3.52734L1.46484 8L5.80078 12.4727L6.51953 11.7774L3.35156 8.50782H14.5352V7.50782H3.33203L6.51953 4.22266L5.80078 3.52734Z" />
+								</svg>
+							</button>
+							<button type="button" class="products-slider__arrow products-slider__arrow-next swiper-button-next">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.2109 3.55078L9.49608 4.25L12.668 7.5H1.45312V8.5H12.668L9.4961 11.75L10.2109 12.4492L14.5508 8L10.2109 3.55078Z" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="products-slider__grid">
+						<div class="products-slider__text">
+							Экспериментальная линия украшений в единичном или малотиражном исполнении. Все украшения сделаны вручную.
+						</div>
+						<div class="products-slider__list swiper">
+							<div class="products-slider__list-wrapper swiper-wrapper">
+								<div class="products-slider__slide products-item swiper-slide">
+									<a href="#" class="products-item__img">
+										<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+										<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+									</a>
+									<div class="products-item__badges">
+										<span class="products-item__badge products-item__badge-new">(new)</span>
+										<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+										<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+									</div>
+									<div class="products-item__actions">
+										<button type="button" class="products-item__action products-item__action-whishlist">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="products-item__action products-item__action-addcart">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+													fill="#111111" />
+												<path
+													d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+													stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+									<div class="products-item__info">
+										<div class="products-item__title">кольцо ALPHA с перидотом</div>
+										<div class="products-item__descr">
+											<div class="products-item__prices">
+												<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+												<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+											</div>
+											<div class="products-item__metals">
+												<span class="products-item__metal products-item__metal-silver"></span>
+												<span class="products-item__metal products-item__metal-gold"></span>
+												<span class="products-item__metal products-item__metal-whitegold"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products-slider__slide products-item swiper-slide">
+									<a href="#" class="products-item__img">
+										<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+										<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+									</a>
+									<div class="products-item__badges">
+										<span class="products-item__badge products-item__badge-new">(new)</span>
+										<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+										<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+									</div>
+									<div class="products-item__actions">
+										<button type="button" class="products-item__action products-item__action-whishlist">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="products-item__action products-item__action-addcart">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+													fill="#111111" />
+												<path
+													d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+													stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+									<div class="products-item__info">
+										<div class="products-item__title">кольцо ALPHA с перидотом</div>
+										<div class="products-item__descr">
+											<div class="products-item__prices">
+												<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+												<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+											</div>
+											<div class="products-item__metals">
+												<span class="products-item__metal products-item__metal-silver"></span>
+												<span class="products-item__metal products-item__metal-gold"></span>
+												<span class="products-item__metal products-item__metal-whitegold"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products-slider__slide products-item swiper-slide">
+									<a href="#" class="products-item__img">
+										<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+										<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+									</a>
+									<div class="products-item__badges">
+										<span class="products-item__badge products-item__badge-new">(new)</span>
+										<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+										<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+									</div>
+									<div class="products-item__actions">
+										<button type="button" class="products-item__action products-item__action-whishlist">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="products-item__action products-item__action-addcart">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+													fill="#111111" />
+												<path
+													d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+													stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+									<div class="products-item__info">
+										<div class="products-item__title">кольцо ALPHA с перидотом</div>
+										<div class="products-item__descr">
+											<div class="products-item__prices">
+												<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+												<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+											</div>
+											<div class="products-item__metals">
+												<span class="products-item__metal products-item__metal-silver"></span>
+												<span class="products-item__metal products-item__metal-gold"></span>
+												<span class="products-item__metal products-item__metal-whitegold"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products-slider__slide products-item swiper-slide">
+									<a href="#" class="products-item__img">
+										<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+										<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+									</a>
+									<div class="products-item__badges">
+										<span class="products-item__badge products-item__badge-new">(new)</span>
+										<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+										<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+									</div>
+									<div class="products-item__actions">
+										<button type="button" class="products-item__action products-item__action-whishlist">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="products-item__action products-item__action-addcart">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+													fill="#111111" />
+												<path
+													d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+													stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+									<div class="products-item__info">
+										<div class="products-item__title">кольцо ALPHA с перидотом</div>
+										<div class="products-item__descr">
+											<div class="products-item__prices">
+												<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+												<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+											</div>
+											<div class="products-item__metals">
+												<span class="products-item__metal products-item__metal-silver"></span>
+												<span class="products-item__metal products-item__metal-gold"></span>
+												<span class="products-item__metal products-item__metal-whitegold"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="products-slider__slide products-item swiper-slide">
+									<a href="#" class="products-item__img">
+										<img data-src="img/products-item/1/1.png" data-srcset="img/products-item/1/1@2x.png 2x" alt="">
+										<img data-src="img/products-item/1/2.jpg" data-srcset="img/products-item/1/2@2x.jpg 2x" alt="">
+									</a>
+									<div class="products-item__badges">
+										<span class="products-item__badge products-item__badge-new">(new)</span>
+										<span class="products-item__badge products-item__badge-preorder">(предзаказ)</span><br>
+										<span class="products-item__badge products-item__badge-choose">(выбрать пару)</span>
+									</div>
+									<div class="products-item__actions">
+										<button type="button" class="products-item__action products-item__action-whishlist">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M10.3147 18.4984C8.3147 18.9984 3.31471 9.49841 2.81472 8.4984C2.14391 7.15675 0.814716 4.9984 4.31472 2.4984C7.11472 0.498399 9.48138 4.9984 10.3147 7.4984C11.3147 5.33173 13.9147 1.29839 16.3147 2.4984C19.3147 3.99841 18.3147 9.9984 17.3147 11.4984C16.3147 12.9984 13.3147 16.9984 10.3147 18.4984Z"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<button type="button" class="products-item__action products-item__action-addcart">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 8.79855C2.66667 11.8641 4.1 17.9953 4.5 17.9953H15C16 14.607 18 8.38251 18 7.99528C18 7.82334 16.0444 7.75171 13.5 7.99525C10.9673 8.23768 7.85125 8.14544 5.5 8.41353C3.56338 8.63435 2.14561 8.79855 2 8.79855Z"
+													fill="#111111" />
+												<path
+													d="M4.5 17.9953C4.1 17.9953 2.66667 11.8641 2 8.79855C2.14561 8.79855 3.56338 8.63435 5.5 8.41353C7.85125 8.14544 10.9673 8.23768 13.5 7.99525C16.0444 7.75171 18 7.82334 18 7.99528C18 8.38251 16 14.607 15 17.9953M4.5 17.9953C4.9 17.9953 11.6667 17.9953 15 17.9953M4.5 17.9953H15"
+													stroke="#111111" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8.50151 2.02812C5.30151 2.41535 5.16818 6.45047 5.50151 8.41962C7.85276 8.15153 10.9688 8.24377 13.5015 8.00134C13.1682 5.99685 11.7015 1.64089 8.50151 2.02812Z"
+													stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</div>
+									<div class="products-item__info">
+										<div class="products-item__title">кольцо ALPHA с перидотом</div>
+										<div class="products-item__descr">
+											<div class="products-item__prices">
+												<span class="products-item__price products-item__price-new">3&nbsp;300&nbsp;₽</span>
+												<span class="products-item__price-old"><s>5&nbsp;500&nbsp;₽</s></span>
+											</div>
+											<div class="products-item__metals">
+												<span class="products-item__metal products-item__metal-silver"></span>
+												<span class="products-item__metal products-item__metal-gold"></span>
+												<span class="products-item__metal products-item__metal-whitegold"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="main-blog">
+				<div class="main-blog__container">
+					<div class="main-blog__body">
+						<div class="main-blog__title">блог</div>
+						<div class="main-blog__list">
+							<div class="main-blog__item main-blog__item_big">
+								<div class="main-blog__item-img">
+									<img data-src="img/hero/7.jpg" data-srcset="img/hero/7@2x.jpg 2x" alt="">
+								</div>
+								<a href="#" class="main-blog__item-text">
+									Мы рады представить вам нашу новую коллекцию ON THE WAY TO WOODSTOCK, посвященную культовому музыкальному фестивалю «Вудсток».
+								</a>
+								<div class="main-blog__item-date">
+									3 мар 2023
+								</div>
+							</div>
+							<div class="main-blog__item">
+								<div class="main-blog__item-img">
+									<img data-src="img/hero/8.jpg" data-srcset="img/hero/8@2x.jpg 2x" alt="">
+								</div>
+								<a href="#" class="main-blog__item-text">
+									SOLO — моносерьга, которая звучит так громко, как захочется
+								</a>
+								<div class="main-blog__item-date">
+									21 сен 2023
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_promo.htm',{})
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

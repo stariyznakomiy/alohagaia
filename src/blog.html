@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__body">
+						<div class="blog__title">блог</div>
+						<div class="blog__list">
+							<div class="blog__main-item blog-main-item">
+								<div class="blog-main-item__img">
+									<img data-src="img/blog/1.jpg" data-srcset="img/blog/1@2x.jpg 2x" alt="">
+								</div>
+								<div class="blog-main-item__content">
+									<a href="#" class="blog-main-item__title">CLASSIC: новая коллекция!</a>
+									<div class="blog-main-item__text">Наша история началась с большой любви к натуральным камням, а украшения с ними всегда были неотъемлемой частью бренда.</div>
+									<div class="blog-main-item__date">3 мар 2023</div>
+								</div>
+							</div>
+							<div class="blog__item blog-item">
+								<div class="blog-item__img">
+									<img data-src="img/blog/2.jpg" data-srcset="img/blog/2@2x.jpg 2x" alt="">
+								</div>
+								<div class="blog-item__content">
+									<a href="#" class="blog-item__text">Мы рады представить вам нашу новую коллекцию ON THE WAY TO WOODSTOCK, посвященную культовому музыкальному фестивалю
+										«Вудсток».</a>
+									<div class="blog-item__date">21 сен 2023</div>
+								</div>
+							</div>
+							<div class="blog__item blog-item">
+								<div class="blog-item__img">
+									<img data-src="img/blog/3.jpg" data-srcset="img/blog/3@2x.jpg 2x" alt="">
+								</div>
+								<div class="blog-item__content">
+									<a href="#" class="blog-item__text">АКЦИЯ! При покупке украшений от 5500 р. в магазинах офлайн мы дарим наши фирменные ароматы для дома</a>
+									<div class="blog-item__date">16 ноя 2023</div>
+								</div>
+							</div>
+							<div class="blog__item blog-item">
+								<div class="blog-item__img">
+									<img data-src="img/blog/4.jpg" data-srcset="img/blog/4@2x.jpg 2x" alt="">
+								</div>
+								<div class="blog-item__content">
+									<a href="#" class="blog-item__text">SOLO — моносерьга, которая звучит так громко, как захочется</a>
+									<div class="blog-item__date">21 ноя 2023</div>
+								</div>
+							</div>
+						</div>
+						<div class="blog__more">
+							<button type="button" class="blog__more-button">Загрузить еще</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

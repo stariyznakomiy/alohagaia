@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body class="transition_disabled">
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page" data-lp>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__grid">
+						<div class="contacts__title">контакты</div>
+						<div class="contacts__info">
+							<div class="contacts__subtitle">мы рады ответить на ваши вопросы по телефону или в социальных сетях каждый день с 12:00 до 20:00</div>
+							<div class="contacts__list">
+								<div class="contacts__item">
+									<div class="contacts__item-capture">наша служба поддержки</div>
+									<a href="tel:+74952780939" class="contacts__item-value">+7 (495) 278-09-39</a>
+								</div>
+								<div class="contacts__item">
+									<div class="contacts__item-capture">email по общим вопросам</div>
+									<a href="mailto:support@alohagaia.ru" class="contacts__item-value">support@alohagaia.ru</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__gallery">
+							<div class="contacts__img">
+								<img data-src="img/contacts/1.jpg" data-srcset="img/contacts/1@2x.jpg 2x" alt="">
+							</div>
+							<div class="contacts__img">
+								<img data-src="img/contacts/2.jpg" data-srcset="img/contacts/2@2x.jpg 2x" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,621 @@
+.account {
+  padding: rem(24) 0 rem(150);
+  @media (max-width: $tablet2) {
+    padding: rem(24) 0 rem(64);
+  }
+  // .account__container
+  &__container {
+  }
+  // .account__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 2.174fr 1fr;
+    grid-column-gap: rem(8);
+    @media (max-width: $pc2) {
+      grid-template-columns: 1fr 3fr;
+    }
+    @media (max-width: $tablet2) {
+      grid-template-columns: 1fr;
+    }
+  }
+  // .account__left
+  &__left {
+    @media (max-width: $tablet2) {
+      display: none;
+    }
+  }
+  // .account__navigation
+  &__navigation {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // .account__navigation-title
+  &__navigation-title {
+    color: $dark-50;
+    line-height: math.div(19, 15);
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $dark-hover;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+    &._active {
+      color: $dark;
+    }
+  }
+  // .account__body
+  &__body {
+  }
+  // .account__nav-spollers
+  &__nav-spollers {
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .account__nav-item
+  &__nav-item {
+    position: relative;
+  }
+  // .account__nav-title
+  &__nav-title {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: rem(22);
+    line-height: math.div(26, 22);
+    cursor: default;
+    @media (max-width: $tablet2) {
+      cursor: pointer;
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          color: $dark-hover;
+        }
+      }
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(20);
+      line-height: math.div(24, 20);
+    }
+    &._spoller-active {
+      svg {
+        transform: rotateX(180deg);
+      }
+    }
+    svg {
+      fill: currentColor;
+      transition: transform 0.3s ease 0s;
+      @media (min-width: $tablet2) {
+        display: none;
+      }
+      @media (max-width: $tablet2) {
+        margin-left: rem(8);
+      }
+    }
+  }
+  // .account__nav-body
+  &__nav-body {
+    @media (max-width: $tablet2) {
+      position: absolute;
+      z-index: 1;
+      top: calc(100% + rem(8));
+      left: 0;
+      width: 100%;
+      max-width: rem(340);
+      padding: rem(15);
+      border: rem(1) solid $border;
+      border-radius: rem(8);
+      background-color: $white;
+    }
+    @media (max-width: $mobileSmall) {
+      top: calc(100% + rem(10));
+    }
+  }
+  // .account__title
+  &__title {
+    font-weight: 500;
+    font-size: rem(22);
+    line-height: math.div(26, 22);
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .account__subtitle
+  &__subtitle {
+    font-weight: 500;
+    line-height: math.div(19, 15);
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .account__table
+  &__table {
+    // .account__table_history
+    &_history {
+      .account__table-row {
+        grid-template-columns: 20% 15% 30% 20% 15%;
+        @media (max-width: $mobile) {
+          grid-template-columns: rem(144) 1fr;
+          gap: rem(4);
+        }
+        @media (max-width: $mobileSmall) {
+          grid-template-columns: rem(124) 1fr;
+        }
+      }
+      .account__table-head {
+        grid-template-columns: 20% 15% 30% 20% 15%;
+      }
+      .account__table-total {
+        @media (min-width: $mobile) {
+          grid-template-columns: 1fr 15%;
+        }
+      }
+    }
+    // .account__table_compound
+    &_compound {
+      .account__table-row {
+        grid-template-columns: 50% 25% 25%;
+        @media (max-width: $mobile) {
+          grid-template-columns: rem(144) 1fr;
+          gap: rem(4);
+        }
+        @media (max-width: $mobileSmall) {
+          grid-template-columns: rem(124) 1fr;
+        }
+      }
+      .account__table-head {
+        grid-template-columns: 50% 25% 25%;
+      }
+      .account__table-total {
+        @media (min-width: $mobile) {
+          grid-template-columns: 1fr 25%;
+        }
+      }
+    }
+    // .account__table_sales
+    &_sales {
+      .account__table-row {
+        grid-template-columns: 20% 40% 40%;
+        @media (max-width: $mobile) {
+          grid-template-columns: rem(144) 1fr;
+          gap: rem(4);
+        }
+        @media (max-width: $mobileSmall) {
+          grid-template-columns: rem(124) 1fr;
+        }
+      }
+      .account__table-head {
+        grid-template-columns: 20% 40% 40%;
+      }
+      .account__table-total {
+        @media (min-width: $mobile) {
+          grid-template-columns: 20% 1fr;
+        }
+      }
+    }
+  }
+  // .account__table-head
+  &__table-head {
+    display: grid;
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+    & > * {
+      color: $secondary2;
+      font-size: rem(13);
+      line-height: math.div(15, 13);
+      &:not(:first-child) {
+        padding: 0 rem(8);
+      }
+    }
+  }
+  // .account__table-row
+  &__table-row {
+    display: grid;
+    border-radius: rem(8);
+    padding: rem(16) 0;
+    background-color: $white;
+    &:not(:last-child) {
+      margin-bottom: rem(4);
+    }
+    @media (max-width: $mobile) {
+      align-items: center;
+      padding: rem(16);
+    }
+    & > * {
+      line-height: math.div(19, 15);
+      @media (min-width: $mobile) {
+        padding: 0 rem(8);
+      }
+    }
+    a {
+      text-decoration: underline;
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  // .account__table-label
+  &__table-label {
+    color: $secondary2;
+    font-size: rem(13);
+    line-height: math.div(15, 13);
+    @media (min-width: $mobile) {
+      display: none;
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(12);
+      line-height: math.div(14, 12);
+    }
+  }
+  // .account__table-value
+  &__table-value {
+  }
+  // .account__table-total
+  &__table-total {
+    display: grid;
+    align-items: baseline;
+    margin-top: rem(8);
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    & > * {
+      line-height: math.div(19, 15);
+      &:first-child {
+        color: $secondary2;
+        text-align: right;
+      }
+      &:last-child {
+        font-weight: 500;
+        padding: 0 rem(8);
+        display: flex;
+        align-items: flex-start;
+        svg {
+          margin-top: rem(1);
+          margin-left: rem(4);
+        }
+      }
+    }
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    color: $dark-50;
+    line-height: math.div(19, 15);
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $dark-hover;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+    svg {
+      fill: currentColor;
+      margin-right: rem(4);
+    }
+  }
+  // .account__list
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+    }
+  }
+  // .account__item
+  &__item {
+    display: grid;
+    grid-template-columns: rem(216) 1fr;
+    grid-column-gap: rem(24);
+    padding: rem(12);
+    border-radius: rem(8);
+    background-color: $white;
+    line-height: math.div(19, 15);
+    &:not(:last-child) {
+      margin-bottom: rem(4);
+    }
+    @media (max-width: $tablet2) {
+      grid-template-columns: rem(180) 1fr;
+      grid-column-gap: rem(16);
+    }
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
+      grid-row-gap: rem(4);
+    }
+  }
+  // .account__label
+  &__label {
+    color: $secondary2;
+  }
+  // .account__value
+  &__value {
+    span {
+      display: block;
+    }
+  }
+  // .account__price
+  &__price {
+    font-weight: 500;
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+  // .account__elements
+  &__elements {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: rem(-4);
+    margin-left: rem(-4);
+    & > * {
+      margin-top: rem(4);
+      margin-left: rem(4);
+    }
+  }
+  // .account__element
+  &__element {
+    padding: rem(6) rem(8) rem(6);
+    border-radius: rem(8);
+    background-color: $light-gray;
+    font-size: rem(15);
+    line-height: 120%;
+  }
+
+  // .account__step
+  &__step {
+    padding: rem(24);
+    border-radius: rem(8);
+    background-color: $white;
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+    @media (max-width: $tablet2) {
+      padding: rem(16) rem(16) rem(24);
+    }
+    @media (max-width: $mobileSmall) {
+      margin: 0 rem(-16);
+    }
+    // .account__step_delivery
+    &_delivery {
+    }
+  }
+  // .account__group
+  &__group {
+    display: grid;
+    grid-template-columns: rem(264) 1fr;
+    gap: rem(16);
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+    @media (max-width: $tablet2) {
+      grid-template-columns: 1fr;
+    }
+  }
+  // .account__capture
+  &__capture {
+    font-size: rem(15);
+    font-weight: 500;
+    line-height: math.div(19, 15);
+    @media (max-width: $tablet2) {
+      margin-bottom: rem(-8);
+    }
+    // .account__capture_label
+    &_label {
+      @media (max-width: $tablet2) {
+        margin-bottom: 0;
+      }
+    }
+    span {
+      display: block;
+      padding-top: rem(4);
+      color: $secondary2;
+      font-weight: 400;
+      font-size: rem(13);
+      line-height: math.div(15, 13);
+      @media (max-width: $tablet2) {
+        margin-bottom: rem(8);
+      }
+    }
+  }
+  // .account__options
+  &__options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // .account__options-item
+  &__options-item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+  // .account__options-input
+  &__options-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    &:checked + .order__options-label {
+      border-color: $dark-25;
+    }
+    &:checked + .order__options-label::before {
+      border-color: $dark;
+      background-color: $dark;
+    }
+    &:checked + .order__options-label:after {
+      transform: scale(1);
+    }
+  }
+  // .account__options-label
+  &__options-label {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: rem(11);
+    border: rem(1) solid $border;
+    border-radius: rem(8);
+    transition: border-color 0.3s ease 0s;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: relative;
+      flex: 0 0 rem(16);
+      width: rem(16);
+      height: rem(16);
+      margin-top: 1px;
+      margin-right: rem(8);
+      border-radius: 50%;
+      border: rem(1) solid $dark-25;
+      transition: 0.3s ease 0s;
+      transition-property: border-color, background-color;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: rem(15);
+      top: rem(16);
+      width: rem(8);
+      height: rem(8);
+      border-radius: 50%;
+      background-color: $white;
+      transition: transform 0.3s ease 0s;
+      transform: scale(0);
+    }
+  }
+  // .account__options-text
+  &__options-text {
+    align-self: center;
+    flex: 1 1 auto;
+    padding-right: rem(16);
+    line-height: math.div(19, 15);
+    span {
+      display: block;
+      padding-top: rem(2);
+      color: $secondary2;
+      font-size: rem(13);
+      line-height: math.div(15, 13);
+      @media (max-width: $mobileSmall) {
+        font-size: rem(12);
+        line-height: math.div(14, 12);
+      }
+    }
+  }
+  // .account__options-price
+  &__options-price {
+    font-weight: 500;
+    line-height: math.div(19, 15);
+  }
+  // .account__inputs
+  &__inputs {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: rem(8);
+    grid-row-gap: rem(16);
+    @media (max-width: $tablet2) {
+      grid-column: 1;
+    }
+  }
+  // .account__input-wrap
+  &__input-wrap {
+    grid-column: 2 span;
+    // .account__input-wrap_small
+    &_small {
+      grid-column: 1 span;
+    }
+  }
+  // .account__input-label
+  &__input-label {
+    line-height: math.div(19, 15);
+    &:not(:last-child) {
+      margin-bottom: rem(4);
+    }
+  }
+  // .account__input
+  &__input {
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+  // .account__input-sub
+  &__input-sub {
+    color: $secondary2;
+    font-size: rem(13);
+    line-height: math.div(15, 13);
+    @media (max-width: $mobileSmall) {
+      font-size: rem(12);
+      line-height: math.div(14, 12);
+    }
+  }
+  // .account__action
+  &__action {
+    grid-column: 2;
+    margin-top: rem(8);
+    @media (max-width: $tablet2) {
+      grid-column: 1;
+    }
+  }
+  // .account__button
+  &__button {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .account__checkbox
+  &__checkbox {
+    grid-column: 2;
+    margin-top: rem(8);
+    &_pass {
+      margin-top: rem(0);
+    }
+    @media (max-width: $tablet2) {
+      grid-column: 1;
+    }
+  }
+  // .account__notice
+  &__notice {
+    color: $dark-50;
+    font-size: rem(13);
+    line-height: math.div(15, 13);
+    a {
+      text-decoration: underline;
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  // .account__bonus
+  &__bonus {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: rem(8);
+    border-radius: rem(8);
+    background-color: $white;
+    line-height: math.div(19, 15);
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+    svg {
+      margin-left: rem(3);
+    }
+  }
+  // .account__empty
+  &__empty {
+    line-height: math.div(19, 15);
+  }
+}
