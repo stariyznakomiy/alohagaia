@@ -13800,15 +13800,22 @@ PERFORMANCE OF THIS SOFTWARE.
         const menuItems = document.querySelectorAll(".menu__item");
         menuItems.forEach((item => {
             if (!isMobile.any()) {
+                let menuItemOverTimeout, menuItemOutTimeout;
                 item.addEventListener("mouseover", (event => {
-                    item.classList.add("_active");
-                    item.closest(".menu__list").classList.add("_active");
-                    if (item.querySelector(".submenu")) document.documentElement.classList.add("menu-hover");
+                    clearTimeout(menuItemOutTimeout);
+                    menuItemOverTimeout = setTimeout((() => {
+                        item.classList.add("_active");
+                        item.closest(".menu__list").classList.add("_active");
+                        if (item.querySelector(".submenu")) document.documentElement.classList.add("menu-hover");
+                    }), 200);
                 }));
                 item.addEventListener("mouseout", (event => {
-                    item.classList.remove("_active");
-                    item.closest(".menu__list").classList.remove("_active");
-                    if (item.querySelector(".submenu")) document.documentElement.classList.remove("menu-hover");
+                    clearTimeout(menuItemOverTimeout);
+                    menuItemOutTimeout = setTimeout((() => {
+                        item.classList.remove("_active");
+                        item.closest(".menu__list").classList.remove("_active");
+                        if (item.querySelector(".submenu")) document.documentElement.classList.remove("menu-hover");
+                    }), 200);
                 }));
             }
         }));
